@@ -2,6 +2,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/custom";
+@import "../node_modules/bootstrap/scss/mixins/grid";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
 
 // Reset and dependencies
 @import "../node_modules/bootstrap/scss/normalize";
@@ -16,3 +18,18 @@
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/jumbotron";
+
+.homepage-hero {
+  @include media-breakpoint-up(xs) {
+    @include make-col($size: 12);
+  }
+  @include media-breakpoint-up(sm) { 
+    @include make-col($size: 12);
+  }
+  @include media-breakpoint-up(md) {
+    @include make-col($size: 8);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col($size: 4);
+  }
+}
