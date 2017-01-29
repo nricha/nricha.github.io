@@ -1855,11 +1855,14 @@ mark,
 html, body, .homepage-container, .homepage-row {
   height: 100%; }
 
-.homepage-row {
-  align-items: center; }
+@media (min-width: 768px) {
+  .homepage-row {
+    align-items: center; } }
+@media (min-width: 992px) {
+  .homepage-row {
+    align-items: center; } }
 
 .homepage-hero {
-  margin-top: -15%;
   flex: 0 0 100%;
   max-width: 100%; }
   @media (min-width: 576px) {
@@ -1870,11 +1873,13 @@ html, body, .homepage-container, .homepage-row {
     .homepage-hero {
       margin-left: 16.66667%;
       flex: 0 0 66.66667%;
-      max-width: 66.66667%; } }
+      max-width: 66.66667%;
+      margin-top: -35%; } }
   @media (min-width: 992px) {
     .homepage-hero {
-      margin-left: 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%; } }
+      margin-left: 25%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-top: -15%; } }
 
 /*# sourceMappingURL=main.css.map */
