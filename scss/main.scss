@@ -27,9 +27,11 @@
     @include make-col($size: 12);
   }
   @include media-breakpoint-up(md) {
+    @include make-col-offset($size: 2);
     @include make-col($size: 8);
   }
   @include media-breakpoint-up(lg) {
+    @include make-col-offset($size: 4);
     @include make-col($size: 4);
   }
 }
