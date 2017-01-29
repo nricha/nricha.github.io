@@ -2,8 +2,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/custom";
-@import "../node_modules/bootstrap/scss/mixins/grid";
-@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
 
 // Reset and dependencies
 @import "../node_modules/bootstrap/scss/normalize";
@@ -13,13 +12,23 @@
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/mixins/grid.scss";
 
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/jumbotron";
 
+html, body, .homepage-container, .homepage-row {
+  height: 100%;
+}
+
+.homepage-row {
+  align-items: center;  
+}
+
+
 .homepage-hero {
+  margin-top: -15%;
   @include media-breakpoint-up(xs) {
     @include make-col($size: 12);
   }
