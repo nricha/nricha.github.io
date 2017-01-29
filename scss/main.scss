@@ -1,5 +1,6 @@
 // Core variables and mixins
 @import "../node_modules/bootstrap/scss/variables";
+@import "./variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/custom";
 @import "../node_modules/bootstrap/scss/bootstrap-grid";
@@ -47,5 +48,17 @@ html, body, .homepage-container, .homepage-row {
     @include make-col-offset($size: 3);
     @include make-col($size: 6);
     margin-top: -15%;
+  }
+  .jumbotron {
+    h1, .lead {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .lead {
+      font-size: 14px;
+    }
   }
 }
