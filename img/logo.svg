@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50.86" height="50.86" viewBox="0 0 50.86 50.86">
+  <defs>
+    <style>
+      .a {
+        fill: #413639;
+      }
+
+      .b {
+        fill: #f2f2f3;
+      }
+    </style>
+  </defs>
+  <title>portfolio logo</title>
+  <g>
+    <circle class="a" cx="25.43" cy="25.43" r="25.43"/>
+    <g>
+      <path class="b" d="M16.45,34.67v-13a2,2,0,0,1,2-1.94h2.36a2,2,0,0,0,2-2V16.62a.78.78,0,0,0-.8-.8H18.43a5.89,5.89,0,0,0-5.89,5.89v13a.78.78,0,0,0,.8.8h2.36A.78.78,0,0,0,16.45,34.67Z" transform="translate(-1.2 -0.22)"/>
+      <path class="b" d="M39.95,35.47a.78.78,0,0,0,.76-.8v-13a5.89,5.89,0,0,0-5.89-5.89h-9a.78.78,0,0,0-.8.8V34.67a.78.78,0,0,0,.8.8h2.36a.78.78,0,0,0,.76-.8V19.77h5.89a2,2,0,0,1,2,1.94v13a.78.78,0,0,0,.8.8Z" transform="translate(-1.2 -0.22)"/>
+    </g>
+  </g>
+</svg>

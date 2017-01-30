@@ -14,15 +14,32 @@
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
-
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/jumbotron";
+@import "../node_modules/bootstrap/scss/transitions";
+
 
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.7rem;
+
+
+  @include media-breakpoint-up(md) {
+    &::last-of-type {
+      margin-left: 30px;
+    }
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  @include media-breakpoint-up(xs) {
+    color: black;
+  }
+  @include media-breakpoint-up(md) {
+    color: white;
+  }
 }
 
 #navbarNavAltMarkup {
@@ -55,9 +72,11 @@ html, body, .homepage-container, .homepage-row {
 .homepage-hero {
   @include media-breakpoint-up(xs) {
     @include make-col($size: 12);
+    margin-top: -100%;
   }
   @include media-breakpoint-up(sm) { 
     @include make-col($size: 12);
+    margin-top: -70%;
   }
   @include media-breakpoint-up(md) {
     @include make-col-offset($size: 2);

@@ -2332,10 +2332,42 @@ mark,
   padding-left: 0;
   border-radius: 0; }
 
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear; }
+  .fade.show {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.show {
+    display: block; }
+
+tr.collapse.show {
+  display: table-row; }
+
+tbody.collapse.show {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease; }
+
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.7rem; }
+  @media (min-width: 768px) {
+    .nav-link::last-of-type {
+      margin-left: 30px; } }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+  @media (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+      color: white; } }
 
 #navbarNavAltMarkup {
   justify-content: flex-end; }
@@ -2362,13 +2394,15 @@ html, body, .homepage-container, .homepage-row {
 .homepage-hero {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-top: -100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
   @media (min-width: 576px) {
     .homepage-hero {
       flex: 0 0 100%;
-      max-width: 100%; } }
+      max-width: 100%;
+      margin-top: -70%; } }
   @media (min-width: 768px) {
     .homepage-hero {
       margin-left: 16.66667%;
