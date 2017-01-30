@@ -2372,14 +2372,12 @@ tbody.collapse.show {
 #navbarNavAltMarkup {
   justify-content: flex-end; }
 
-body {
-  background-color: #d4d4d4; }
-  @media (min-width: 768px) {
-    body {
-      background-image: url(../img/site-bg.jpg);
-      background-position-x: center;
-      background-size: contain;
-      background-repeat: no-repeat; } }
+@media (min-width: 768px) {
+  body {
+    background-image: url(../img/site-bg.jpg);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat; } }
 
 html, body, .homepage-container, .homepage-row {
   height: 100%; }
