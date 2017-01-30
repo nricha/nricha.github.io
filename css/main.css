@@ -2360,7 +2360,7 @@ tbody.collapse.show {
   letter-spacing: 3px;
   font-size: 0.7rem; }
   @media (min-width: 768px) {
-    .nav-link::last-of-type {
+    .nav-link.last {
       margin-left: 30px; } }
 
 .navbar-light .navbar-nav .nav-link {
