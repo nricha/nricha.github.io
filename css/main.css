@@ -1852,12 +1852,14 @@ mark,
   padding-left: 0;
   border-radius: 0; }
 
-@media (min-width: 768px) {
-  body {
-    background-image: url(../img/site-bg.jpg);
-    background-position-x: center;
-    background-size: contain;
-    background-repeat: no-repeat; } }
+body {
+  background-color: #d4d4d4; }
+  @media (min-width: 768px) {
+    body {
+      background-image: url(../img/site-bg.jpg);
+      background-position-x: center;
+      background-size: contain;
+      background-repeat: no-repeat; } }
 
 html, body, .homepage-container, .homepage-row {
   height: 100%; }
@@ -1871,7 +1873,10 @@ html, body, .homepage-container, .homepage-row {
 
 .homepage-hero {
   flex: 0 0 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 576px) {
     .homepage-hero {
       flex: 0 0 100%;
@@ -1887,7 +1892,7 @@ html, body, .homepage-container, .homepage-row {
       margin-left: 25%;
       flex: 0 0 50%;
       max-width: 50%;
-      margin-top: -15%; } }
+      margin-top: -30%; } }
   .homepage-hero .jumbotron h1, .homepage-hero .jumbotron .lead {
     text-align: center;
     text-transform: uppercase; }
@@ -1895,14 +1900,45 @@ html, body, .homepage-container, .homepage-row {
     color: #000;
     font-size: 29px;
     font-weight: 700;
-    letter-spacing: 7px; }
+    letter-spacing: 7px;
+    margin-bottom: 25px; }
     @media (min-width: 768px) {
       .homepage-hero .jumbotron h1 {
         color: #fff; } }
+  .homepage-hero .jumbotron .jumbotron-hr {
+    border-top-color: #b3ccba;
+    width: 58%;
+    margin-bottom: 19px; }
   .homepage-hero .jumbotron .lead {
     font-weight: 700;
-    font-size: 11.5px;
+    font-size: 11px;
     color: #00a887;
-    letter-spacing: 2px; }
+    letter-spacing: 3px; }
+  .homepage-hero .projects {
+    color: white;
+    background-color: #00a887;
+    border-color: transparent;
+    padding: 13px 20px;
+    font-size: 11px;
+    border-radius: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+    .homepage-hero .projects:hover {
+      color: white;
+      background-color: #00755e;
+      border-color: transparent; }
+    .homepage-hero .projects:focus, .homepage-hero .projects.focus {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); }
+    .homepage-hero .projects.disabled, .homepage-hero .projects:disabled {
+      background-color: #00a887;
+      border-color: transparent; }
+    .homepage-hero .projects:active, .homepage-hero .projects.active, .show > .homepage-hero .projects.dropdown-toggle {
+      color: white;
+      background-color: #00755e;
+      background-image: none;
+      border-color: transparent; }
+    .homepage-hero .projects:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
