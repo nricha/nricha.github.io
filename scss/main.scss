@@ -19,6 +19,16 @@
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/jumbotron";
 
+body {
+  @include media-breakpoint-up(md) {
+    background-image: url(../img/site-bg.jpg);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  // background-color: rgba($black, 0.95);
+}
+
 html, body, .homepage-container, .homepage-row {
   height: 100%;
 }
@@ -55,9 +65,13 @@ html, body, .homepage-container, .homepage-row {
       text-transform: uppercase;
     }
     h1 {
+      color: $black;
+      @include media-breakpoint-up(md) {
+        color: $white;
+      }
       font-size: 29px;
       font-weight: $font-weight-bold;
-      letter-spacing: 4px;
+      letter-spacing: 7px;
     }
     .lead {
       font-weight: $font-weight-bold;
