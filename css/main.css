@@ -1923,7 +1923,8 @@ html, body, .homepage-container, .homepage-row {
     border-radius: 0;
     font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    word-spacing: 1.5px; }
     .homepage-hero .projects:hover {
       color: white;
       background-color: #00755e;
