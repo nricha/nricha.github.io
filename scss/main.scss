@@ -184,14 +184,14 @@ $porfolio-img-height: 200px;
       @include media-breakpoint-up(xs) {
         @include make-col($size: 12);
       }
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(xs) {
         @include make-col($size: 12);
       }
-      @include media-breakpoint-up(md) { 
+      @include media-breakpoint-up(md) {
         @include make-col($size: 6);
       }
-      @include media-breakpoint-up(lg) {
-        @include make-col($size: 6);
+      @include media-breakpoint-up(lg) { 
+        @include make-col($size: 4);
       }
       @include media-breakpoint-up(xl) {
         @include make-col($size: 4);
