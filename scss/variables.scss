@@ -8,3 +8,19 @@ $navbar-padding-y: 1.5rem;
 $navbar-light-color: #ddd;
 $navbar-light-hover-color: darken($navbar-light-color, 1);
 $jumbotron-padding: 1rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);

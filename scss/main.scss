@@ -49,8 +49,10 @@
 body {
   @include media-breakpoint-up(md) {
     background-image: url(../img/site-bg.jpg);
+    background-color: #0b0b09;
     background-position-x: center;
-    background-size: contain;
+    background-position-y: 75%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -149,6 +151,6 @@ html, body, .homepage-container, .homepage-row {
     height: 50%;
   }
   .top-half {
-    background-color: #0f0;
+    background-color: $secondary-green;
   }
 }

@@ -84,8 +84,15 @@
       var windowHeight = $(window).height();
       $('#about').height(windowHeight);
     }
+    function setHomePageHeight() {
+      var windowHeight = $(window).height();
+      $('#home').css('height', 'calc(' + windowHeight + 'px - calc(50px + 1rem))');
+    }
     var resizeTimer;
-    $().ready(setAboutPageHeight);
+    $().ready(function() {
+      setAboutPageHeight();
+      setHomePageHeight()
+    });
     $(window).resize(function() {
       clearTimeout(resizeTimer);
       setTimeout(setAboutPageHeight, 250);
