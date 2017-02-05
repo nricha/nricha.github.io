@@ -2405,6 +2405,10 @@ html, body, .homepage-container, .homepage-row {
   .navbar-toggleable-sm > .container {
     width: 100%; } }
 
+.homepage-container {
+  padding-right: 0;
+  padding-left: 0; }
+
 .homepage-row {
   margin-top: calc(50px + 1rem); }
   @media (min-width: 768px) {

@@ -66,6 +66,11 @@ html, body, .homepage-container, .homepage-row {
   }
 }
 
+.homepage-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .homepage-row {
   margin-top: calc(50px + 1rem);
   @include media-breakpoint-up(md) {
