@@ -21,7 +21,6 @@
 
 @import "../node_modules/bootstrap/scss/utilities/position";
 
-
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -154,6 +153,7 @@ html, body, .homepage-container, .homepage-row {
   }
 }
 
+$porfolio-img-height: 200px;
 
 #portfolio {
   background-color: $secondary-green;
@@ -162,5 +162,24 @@ html, body, .homepage-container, .homepage-row {
   }
   .bottom-half {
     background-color: #fff;
+    .project-container {
+      min-height: $porfolio-img-height + 50px;
+      padding: 1rem;
+      img {
+        max-height: $porfolio-img-height;
+      }
+      @include media-breakpoint-up(xs) {
+        @include make-col($size: 12);
+      }
+      @include media-breakpoint-up(sm) { 
+        @include make-col($size: 12);
+      }
+      @include media-breakpoint-up(md) {
+        @include make-col($size: 6);
+      }
+      @include media-breakpoint-up(lg) {
+        @include make-col($size: 4);
+      }
+    }
   }
 }

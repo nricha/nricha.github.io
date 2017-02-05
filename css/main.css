@@ -2800,5 +2800,24 @@ html, body, .homepage-container, .homepage-row {
     height: 50%; }
   #portfolio .bottom-half {
     background-color: #fff; }
+    #portfolio .bottom-half .project-container {
+      min-height: 250px;
+      padding: 1rem;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      #portfolio .bottom-half .project-container img {
+        max-height: 200px; }
+      @media (min-width: 576px) {
+        #portfolio .bottom-half .project-container {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      @media (min-width: 768px) {
+        #portfolio .bottom-half .project-container {
+          flex: 0 0 50%;
+          max-width: 50%; } }
+      @media (min-width: 992px) {
+        #portfolio .bottom-half .project-container {
+          flex: 0 0 33.33333%;
+          max-width: 33.33333%; } }
 
 /*# sourceMappingURL=main.css.map */
