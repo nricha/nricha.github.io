@@ -2355,6 +2355,25 @@ tbody.collapse.show {
   overflow: hidden;
   transition: height 0.35s ease; }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030; }
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030; }
+
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2382,12 +2401,18 @@ tbody.collapse.show {
 html, body, .homepage-container, .homepage-row {
   height: 100%; }
 
-@media (min-width: 768px) {
-  .homepage-row {
-    align-items: center; } }
-@media (min-width: 992px) {
-  .homepage-row {
-    align-items: center; } }
+@media (max-width: 575px) {
+  .navbar-toggleable-sm > .container {
+    width: 100%; } }
+
+.homepage-row {
+  margin-top: calc(50px + 1rem); }
+  @media (min-width: 768px) {
+    .homepage-row {
+      align-items: center; } }
+  @media (min-width: 992px) {
+    .homepage-row {
+      align-items: center; } }
 
 .homepage-hero {
   flex: 0 0 100%;
@@ -2461,5 +2486,10 @@ html, body, .homepage-container, .homepage-row {
       border-color: transparent; }
     .homepage-hero .projects:hover {
       text-decoration: none; }
+
+#about .top-half, #about .bottom-half {
+  height: 50%; }
+#about .top-half {
+  background-color: #0f0; }
 
 /*# sourceMappingURL=main.css.map */
