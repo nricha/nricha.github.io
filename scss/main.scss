@@ -155,14 +155,28 @@ html, body, .homepage-container, .homepage-row {
 $porfolio-img-height: 200px;
 
 #portfolio {
-  background-color: $secondary-green;
   .top-half, .bottom-half {
-    height: 50%;
+    height: 50%;    
+  }
+  .top-half {
+    background-color: $secondary-green;
+    z-index: 200;    
+  }
+  .fixed-jumbotron {
+    position: fixed;
+    top: 0;
+  }
+  .fixed-top-half {
+    position: fixed;
+    top: 0;
+    height: 100px;
   }
   .bottom-half {
     background-color: #fff;
+    padding-top: 60px;
     .project-container {
       min-height: $porfolio-img-height + 50px;
+      margin-bottom: 40px;
       padding: 1rem;
       img {
         max-height: $porfolio-img-height;
@@ -170,13 +184,16 @@ $porfolio-img-height: 200px;
       @include media-breakpoint-up(xs) {
         @include make-col($size: 12);
       }
-      @include media-breakpoint-up(sm) { 
+      @include media-breakpoint-up(sm) {
         @include make-col($size: 12);
       }
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(md) { 
         @include make-col($size: 6);
       }
       @include media-breakpoint-up(lg) {
+        @include make-col($size: 6);
+      }
+      @include media-breakpoint-up(xl) {
         @include make-col($size: 4);
       }
     }
