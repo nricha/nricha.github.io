@@ -2691,7 +2691,6 @@ tbody.collapse.show {
 @media (min-width: 768px) {
   body {
     background-image: url(../img/site-bg.jpg);
-    background-color: #0b0b09;
     background-position-x: center;
     background-position-y: 75%;
     background-size: cover;
@@ -2821,14 +2820,16 @@ html, body, .homepage-container, .homepage-row {
           max-width: 33.33333%; } }
     #portfolio .bottom-half .project-title {
       font-weight: 900;
-      font-size: 13px;
+      font-size: 12.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       margin-top: 20px;
       color: rgba(0, 0, 0, 0.7); }
     #portfolio .bottom-half .project-type {
-      margin-top: 5px;
+      margin-top: 2px;
       text-transform: uppercase;
       font-weight: 400;
+      letter-spacing: 1px;
       color: rgba(0, 0, 0, 0.5);
       font-size: 11px; }
 

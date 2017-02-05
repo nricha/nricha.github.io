@@ -48,7 +48,6 @@
 body {
   @include media-breakpoint-up(md) {
     background-image: url(../img/site-bg.jpg);
-    background-color: #0b0b09;
     background-position-x: center;
     background-position-y: 75%;
     background-size: cover;
@@ -183,15 +182,17 @@ $porfolio-img-height: 200px;
     }
     .project-title {
       font-weight: $font-weight-black;
-      font-size: 13px;
+      font-size: 12.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       margin-top: 20px;
       color: fade-out(#000, .3);
     }
     .project-type {
-      margin-top: 5px;
+      margin-top: 2px;
       text-transform: uppercase;
       font-weight: $font-weight-regular;
+      letter-spacing: 1px;
       color: fade-out(#000, .5);
       font-size: 11px;
     }
