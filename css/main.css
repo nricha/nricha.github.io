@@ -2794,11 +2794,11 @@ html, body, .homepage-container, .homepage-row {
     .homepage-hero .projects:hover {
       text-decoration: none; }
 
-#about {
+#portfolio {
   background-color: #00a887; }
-  #about .top-half, #about .bottom-half {
+  #portfolio .top-half, #portfolio .bottom-half {
     height: 50%; }
-  #about .bottom-half {
+  #portfolio .bottom-half {
     background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

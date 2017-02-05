@@ -68,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div id="about" class="row no-gutters align-items-center justify-content-center">
+    <div id="portfolio" class="row no-gutters align-items-center justify-content-center">
       <div class="top-half homepage-hero align-items-center justify-content-center">
         <div class="jumbotron column">
           <h1 class="display-5">Projects &amp; Work</h1>
@@ -83,9 +83,9 @@
 
   <script>
   (function() {
-    function setAboutPageHeight() {
+    function setPortfolioPageHeight() {
       var windowHeight = $(window).height();
-      $('#about').height(windowHeight);
+      $('#portfolio').height(windowHeight);
     }
     function setHomePageHeight() {
       var windowHeight = $(window).height();
@@ -93,12 +93,15 @@
     }
     var resizeTimer;
     $().ready(function() {
-      setAboutPageHeight();
+      setPortfolioPageHeight();
       setHomePageHeight();
     });
     $(window).resize(function() {
       clearTimeout(resizeTimer);
-      setTimeout(setAboutPageHeight, 250);
+      setTimeout(function() {
+        setPortfolioPageHeight();
+        setHomePageHeight();
+      }, 250);
     });
   }());
   </script>
