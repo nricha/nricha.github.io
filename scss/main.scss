@@ -83,25 +83,37 @@ html, body, .homepage-container, .homepage-row {
   }
 }
 
+#home {
+  .homepage-hero {
+    @include media-breakpoint-up(xs) {
+      @include make-col($size: 12);
+      margin-top: -100%;
+    }
+    @include media-breakpoint-up(sm) { 
+      @include make-col($size: 12);
+      margin-top: -70%;
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col-offset($size: 2);
+      @include make-col($size: 8);
+      margin-top: -35%;
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col-offset($size: 3);
+      @include make-col($size: 6);
+      margin-top: -30%;
+    }
+
+    h1 {
+      color: $black;
+      @include media-breakpoint-up(md) {
+        color: $white;
+      }
+    }
+  }  
+}
+
 .homepage-hero {
-  @include media-breakpoint-up(xs) {
-    @include make-col($size: 12);
-    margin-top: -100%;
-  }
-  @include media-breakpoint-up(sm) { 
-    @include make-col($size: 12);
-    margin-top: -70%;
-  }
-  @include media-breakpoint-up(md) {
-    @include make-col-offset($size: 2);
-    @include make-col($size: 8);
-    margin-top: -35%;
-  }
-  @include media-breakpoint-up(lg) {
-    @include make-col-offset($size: 3);
-    @include make-col($size: 6);
-    margin-top: -30%;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,10 +123,7 @@ html, body, .homepage-container, .homepage-row {
       text-transform: uppercase;
     }
     h1 {
-      color: $black;
-      @include media-breakpoint-up(md) {
-        color: $white;
-      }
+      color: $white;
       font-size: 29px;
       font-weight: $font-weight-bold;
       letter-spacing: 7px;
@@ -147,10 +156,11 @@ html, body, .homepage-container, .homepage-row {
 
 
 #about {
+  background-color: $secondary-green;
   .top-half, .bottom-half {
     height: 50%;
   }
-  .top-half {
-    background-color: $secondary-green;
+  .bottom-half {
+    background-color: #fff;
   }
 }

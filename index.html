@@ -68,9 +68,12 @@
         </div>
       </div>
     </div>
-    <div id="about" class="row no-gutters">
-      <div class="top-half row no-gutters col-12">
-        <div class="col">This is an about page</div>
+    <div id="about" class="row no-gutters align-items-center justify-content-center">
+      <div class="top-half homepage-hero align-items-center justify-content-center">
+        <div class="jumbotron column">
+          <h1 class="display-5">Projects &amp; Work</h1>
+          <hr class="my-5 jumbotron-hr">
+        </div>
       </div>
       <div class="bottom-half row no-gutters col-12">
         <div class="col">These are things on the about page</div>
@@ -91,7 +94,7 @@
     var resizeTimer;
     $().ready(function() {
       setAboutPageHeight();
-      setHomePageHeight()
+      setHomePageHeight();
     });
     $(window).resize(function() {
       clearTimeout(resizeTimer);

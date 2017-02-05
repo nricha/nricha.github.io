@@ -2717,42 +2717,46 @@ html, body, .homepage-container, .homepage-row {
     .homepage-row {
       align-items: center; } }
 
-.homepage-hero {
+#home .homepage-hero {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-top: -100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  margin-top: -100%; }
   @media (min-width: 576px) {
-    .homepage-hero {
+    #home .homepage-hero {
       flex: 0 0 100%;
       max-width: 100%;
       margin-top: -70%; } }
   @media (min-width: 768px) {
-    .homepage-hero {
+    #home .homepage-hero {
       margin-left: 16.66667%;
       flex: 0 0 66.66667%;
       max-width: 66.66667%;
       margin-top: -35%; } }
   @media (min-width: 992px) {
-    .homepage-hero {
+    #home .homepage-hero {
       margin-left: 25%;
       flex: 0 0 50%;
       max-width: 50%;
       margin-top: -30%; } }
+  #home .homepage-hero h1 {
+    color: #000; }
+    @media (min-width: 768px) {
+      #home .homepage-hero h1 {
+        color: #fff; } }
+
+.homepage-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .homepage-hero .jumbotron h1, .homepage-hero .jumbotron .lead {
     text-align: center;
     text-transform: uppercase; }
   .homepage-hero .jumbotron h1 {
-    color: #000;
+    color: #fff;
     font-size: 29px;
     font-weight: 700;
     letter-spacing: 7px;
     margin-bottom: 25px; }
-    @media (min-width: 768px) {
-      .homepage-hero .jumbotron h1 {
-        color: #fff; } }
   .homepage-hero .jumbotron .jumbotron-hr {
     border-top-color: #b3ccba;
     width: 68%;
@@ -2790,9 +2794,11 @@ html, body, .homepage-container, .homepage-row {
     .homepage-hero .projects:hover {
       text-decoration: none; }
 
-#about .top-half, #about .bottom-half {
-  height: 50%; }
-#about .top-half {
+#about {
   background-color: #00a887; }
+  #about .top-half, #about .bottom-half {
+    height: 50%; }
+  #about .bottom-half {
+    background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
