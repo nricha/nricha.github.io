@@ -2,7 +2,7 @@
 
   function setPortfolioPageHeight() {
     var windowHeight = $(window).height();
-    $('#portfolio').height(windowHeight);
+    $('#portfolio .top-half').height(windowHeight / 2);
   }
 
   function setHomePageHeight() {
@@ -25,16 +25,5 @@
       setHomePageHeight();
     }, 250);
   });
-  // var $portfolioTopHalf = $('#portfolio-top-half').sticky({
-  //   topSpacing: 0,
-  //   center: true
-  // })
-  // var $portfolioJumbotron = $('#portfolio-jumbotron')
-  // })
-  // .sticky({topSpacing:0});
-
-  // $(window).on('scroll', function() {
-   
-  // });
 
 }());

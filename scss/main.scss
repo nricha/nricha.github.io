@@ -156,7 +156,7 @@ $porfolio-img-height: 200px;
 
 #portfolio {
   .top-half, .bottom-half {
-    height: 50%;    
+    // height: 50%;    
   }
   .top-half {
     background-color: $secondary-green;
@@ -192,6 +192,7 @@ $porfolio-img-height: 200px;
     @include media-breakpoint-up(xxl) {
       max-width: map-get($container-max-widths, xxl);
     }
+
     .project-container {
       min-height: $porfolio-img-height + 50px;
       margin-bottom: 40px;
