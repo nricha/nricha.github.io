@@ -26,4 +26,19 @@
     }, 250);
   });
 
+  $('.project-click-target').click(function(event) {
+    var partialUrl = './' + $(this).attr('href').replace('#', '') + '/partial.html' ;
+    $.get(partialUrl, function(partialText) {
+      $('section').hide();
+      $('body').removeClass('show-bg').append(partialText);
+    });
+    event.preventDefault();
+  });
+
+
+  window.closePartial = function(partialId) {
+    $('#' + partialId).remove();
+    $('section').show();
+    $('body').addClass('show-bg');
+  }
 }());

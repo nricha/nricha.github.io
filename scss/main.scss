@@ -46,7 +46,7 @@
   justify-content: flex-end;
 }
 
-body {
+body.show-bg {
   @include media-breakpoint-up(md) {
     background-image: url(../img/site-bg.jpg);
     background-position-x: center;
@@ -236,3 +236,6 @@ $porfolio-img-height: 200px;
     }
   }
 }
+ .d-block.img-fluid {
+   max-height: 400px;
+ }

@@ -2838,7 +2838,7 @@ tbody.collapse.show {
   justify-content: flex-end; }
 
 @media (min-width: 768px) {
-  body {
+  body.show-bg {
     background-image: url(../img/site-bg.jpg);
     background-position-x: center;
     background-position-y: 75%;
@@ -3008,5 +3008,8 @@ html, body, .homepage-container, .homepage-row {
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 11px; }
+
+.d-block.img-fluid {
+  max-height: 400px; }
 
 /*# sourceMappingURL=main.css.map */
