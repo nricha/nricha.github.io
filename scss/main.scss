@@ -60,6 +60,10 @@ html, body, .homepage-container, .homepage-row {
   height: 100%;
 }
 
+nav.project-details {
+  background-color: $secondary-green;
+}
+
 // bugfix
 .navbar-toggleable-sm > .container {
   @include media-breakpoint-down(xs) {
@@ -238,4 +242,10 @@ $porfolio-img-height: 200px;
 }
  .d-block.img-fluid {
    max-height: 400px;
+ }
+
+ section.project-details {
+   .carousel.slide {
+     margin-top: 200px;
+   }
  }

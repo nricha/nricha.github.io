@@ -2848,6 +2848,9 @@ tbody.collapse.show {
 html, body, .homepage-container, .homepage-row {
   height: 100%; }
 
+nav.project-details {
+  background-color: #00a887; }
+
 @media (max-width: 575px) {
   .navbar-toggleable-sm > .container {
     width: 100%; } }
@@ -3011,5 +3014,8 @@ html, body, .homepage-container, .homepage-row {
 
 .d-block.img-fluid {
   max-height: 400px; }
+
+section.project-details .carousel.slide {
+  margin-top: 200px; }
 
 /*# sourceMappingURL=main.css.map */

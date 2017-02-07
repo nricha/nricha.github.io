@@ -31,6 +31,7 @@
     $.get(partialUrl, function(partialText) {
       $('section').fadeOut();
       $('body').removeClass('show-bg');
+      $('nav').addClass('project-details');
       $('.homepage-container').append(partialText);
     });
     event.preventDefault();
@@ -41,7 +42,7 @@
     $('#' + partialId).fadeOut(function() {
       $('section').fadeIn();
       $('body').addClass('show-bg');
-
+      $('nav').removeClass('project-details');
     }).remove();
   }
 }());
