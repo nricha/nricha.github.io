@@ -19,6 +19,7 @@
 @import "../node_modules/bootstrap/scss/jumbotron";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/close";
 
 @import "../node_modules/bootstrap/scss/utilities/position";
 
@@ -247,5 +248,11 @@ $porfolio-img-height: 200px;
  section.project-details {
    .carousel.slide {
      margin-top: 200px;
+   }
+   button.close {
+     position: absolute;
+     right: 40px;
+     top: 150px;
+     font-size: 40px;
    }
  }

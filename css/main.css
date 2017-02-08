@@ -2801,6 +2801,27 @@ tbody.collapse.show {
   color: #fff;
   text-align: center; }
 
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5; }
+  .close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75; }
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none; }
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -3017,5 +3038,10 @@ nav.project-details {
 
 section.project-details .carousel.slide {
   margin-top: 200px; }
+section.project-details button.close {
+  position: absolute;
+  right: 40px;
+  top: 150px;
+  font-size: 40px; }
 
 /*# sourceMappingURL=main.css.map */
