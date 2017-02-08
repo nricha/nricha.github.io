@@ -241,18 +241,42 @@ $porfolio-img-height: 200px;
     }
   }
 }
- .d-block.img-fluid {
-   max-height: 400px;
- }
+ 
 
- section.project-details {
-   .carousel.slide {
-     margin-top: 200px;
-   }
-   button.close {
-     position: absolute;
-     right: 40px;
-     top: 150px;
-     font-size: 40px;
-   }
- }
+section.project-details {
+  .carousel.slide {
+    margin-top: 200px;
+    @include media-breakpoint-up(sm) { 
+      @include make-col($size: 12);
+    }
+    @include media-breakpoint-up(md) { 
+       @include make-col($size: 8);
+     }
+    @include media-breakpoint-up(lg) { 
+      @include make-col($size: 6);
+    }
+    @include media-breakpoint-up(xl) { 
+      @include make-col($size: 6);
+    }
+  }
+  button.close {
+    position: absolute;
+    right: 40px;
+    top: 150px;
+    font-size: 40px;
+  }
+  .d-block.img-fluid {
+     @include media-breakpoint-up(sm) {
+      max-height: 300px;
+    }
+    @include media-breakpoint-up(md) {
+       max-height: 400px;
+     }
+    @include media-breakpoint-up(lg) {
+      max-height: 600px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-height: 800px;
+    }
+  }
+}
