@@ -29,16 +29,16 @@ function watchDirectoriesForReload() {
 }
 
 function watchDirectoriesForRegen() {
-  console.log('watching for changes', __dirname);
-  bsInstance.watch('./old-siam/**/*.*').on('change', () => {
-    ejs.renderFile('./old-siam/index.ejs', {}, {}, (err, str) => {
+  bsInstance.watch('./projects/**/!(index.html)').on('change', (filePath, arg2) => {
+    const changedProject = path.dirname(filePath);
+    console.log('changed project', changedProject);
+    ejs.renderFile(path.join(changedProject, 'index.ejs'), {}, {}, (err, str) => {
       if(!err) {
-        fs.writeFileSync('./old-siam/index.html', str);
+        fs.writeFileSync(path.join(changedProject, 'index.html'), str);
       }
     });
   });
 }
 
 watchDirectoriesForRegen();
-
 
