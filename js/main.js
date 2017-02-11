@@ -26,23 +26,4 @@
     }, 250);
   });
 
-  $('.project-click-target').click(function(event) {
-    var partialUrl = './' + $(this).attr('href').replace('#', '') + '/partial.html' ;
-    $.get(partialUrl, function(partialText) {
-      $('section').fadeOut();
-      $('body').removeClass('show-bg');
-      $('nav').addClass('project-details');
-      $('.homepage-container').append(partialText);
-    });
-    event.preventDefault();
-  });
-
-
-  window.closePartial = function(partialId) {
-    $('#' + partialId).fadeOut(function() {
-      $('section').fadeIn();
-      $('body').addClass('show-bg');
-      $('nav').removeClass('project-details');
-    }).remove();
-  }
 }());
