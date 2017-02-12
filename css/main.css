@@ -2856,7 +2856,7 @@ button.close {
       font-size: 22px;
       letter-spacing: 2px; }
   .project-body .project-summary {
-    margin-bottom: 90px;
+    margin-bottom: 180px;
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
     line-height: 1.7; }
@@ -2868,8 +2868,7 @@ button.close {
     font-size: 12.5px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 20px;
-    color: rgba(0, 0, 0, 0.5); }
+    margin-top: 20px; }
   .project-body .project-img {
     align-self: center; }
     .project-body .project-img img {
