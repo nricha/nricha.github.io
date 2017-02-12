@@ -17,11 +17,10 @@ function getDirectories (srcpath, filter) {
 
 function watchDirectoriesForReload() {
   const directoriesToWatch = getDirectories('./', (dirname) => {
-    const unwantedDirs = ['devScripts', 'node_modules', 'scss']
+    const unwantedDirs = ['devScripts', 'node_modules', 'scss', '.git', '.sass-cache', '.vscode']
     return unwantedDirs.indexOf(dirname) === -1;
   });
   const itemsToWatch = directoriesToWatch.concat(['index.html']);
-  console.log('itemsToWatch', itemsToWatch);
   bsInstance.watch(itemsToWatch).on('change', bsInstance.reload);
 
   bsInstance.init({

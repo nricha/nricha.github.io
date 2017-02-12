@@ -2841,6 +2841,33 @@ button.close {
   top: 0;
   z-index: 1030; }
 
+.project-nav {
+  background-color: #00a887; }
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px; }
+
+.project-title {
+  margin-bottom: 60px; }
+  .project-title h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px; }
+
+.project-summary {
+  margin-bottom: 90px; }
+
+.project-img-caption {
+  margin: 30px 0;
+  text-transform: uppercase;
+  align-self: center; }
+
+.project-img {
+  align-self: center; }
+
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
