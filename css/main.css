@@ -2866,11 +2866,10 @@ button.close {
     align-self: center;
     font-weight: 900;
     font-size: 12.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 20px; }
+    letter-spacing: 2px; }
   .project-body .project-img {
-    align-self: center; }
+    align-self: center;
+    margin-bottom: 50px; }
     .project-body .project-img img {
       max-width: 100%; }
 
