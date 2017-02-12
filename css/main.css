@@ -2849,17 +2849,35 @@ button.close {
   flex-direction: column;
   margin-top: 200px; }
   .project-body .project-title {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
     margin-bottom: 60px; }
     .project-body .project-title h1 {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 22px;
       letter-spacing: 2px; }
+    @media (min-width: 768px) {
+      .project-body .project-title {
+        margin-left: 16.66667%; } }
   .project-body .project-summary {
     margin-bottom: 180px;
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
     line-height: 1.7; }
+    @media (min-width: 576px) {
+      .project-body .project-summary {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; } }
+    @media (min-width: 768px) {
+      .project-body .project-summary {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        margin-left: 16.66667%; } }
+    @media (min-width: 992px) {
+      .project-body .project-summary {
+        flex: 0 0 25%;
+        max-width: 25%; } }
   .project-body .project-img-caption {
     margin: 30px 0;
     text-transform: uppercase;
