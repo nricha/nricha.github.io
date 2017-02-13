@@ -40,6 +40,15 @@ const buildMethods = {
         fs.writeFileSync(path.join(dirPath, 'index.html'), str);
       }
     });
+  },
+  regenAllProjects: () => {
+    const allProjects = fs.readdirSync('./projects');
+    const allProjectDirPaths = allProjects.filter((projectName) => {
+      return projectName !== '.DS_Store';
+    }).map((projectName) => {
+      return path.join('./', 'projects', projectName);
+    });
+    allProjectDirPaths.forEach(buildMethods.regenProjectWithDirPath);
   }
 };
 
