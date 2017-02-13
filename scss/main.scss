@@ -96,6 +96,14 @@
   }
 }
 
+.navbar-brand > svg {
+  path {
+    @include media-breakpoint-down(sm) {
+      fill: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   @include media-breakpoint-up(xs) {
     color: black;
@@ -307,4 +315,3 @@ $porfolio-img-height: 200px;
     }
   }
 }
-
