@@ -1,4 +1,5 @@
 const ejs = require('ejs');
+const sass = require('node-sass');
 const browserSync = require('browser-sync');
 const bsInstance = browserSync.create();
 
@@ -29,7 +30,7 @@ function watchDirectoriesForReload() {
 }
 
 function watchDirectoriesForRegen() {
-  bsInstance.watch('./projects/**/!(index.html)').on('change', (filePath, arg2) => {
+  bsInstance.watch('./projects/**/!(index.html)').on('change', (filePath) => {
     const changedProject = path.dirname(filePath);
     console.log('changed project', changedProject);
     ejs.renderFile(path.join(changedProject, 'index.ejs'), {}, {}, (err, str) => {
@@ -37,6 +38,15 @@ function watchDirectoriesForRegen() {
         fs.writeFileSync(path.join(changedProject, 'index.html'), str);
       }
     });
+  });
+  bsInstance.watch('./scss/*.scss').on('change', (filePath) => {
+    sass.render({
+      file: filePath,
+      includePaths: [
+        'node_modules/bootstrap/scss'
+      ],
+      outFile: './css'
+    })
   });
 }
 

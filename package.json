@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node devScripts/develop.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.7",
-    "ejs": "^2.5.5"
+    "ejs": "^2.5.5",
+    "node-sass": "^4.5.0"
   }
 }
