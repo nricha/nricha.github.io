@@ -2559,6 +2559,12 @@ nav.project-details {
       align-items: center;
       margin-top: calc(150px + 1rem); } }
 
+.lead {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+  color: #00a887; }
+
 #home .homepage-hero {
   flex: 0 0 100%;
   max-width: 100%;
@@ -2592,7 +2598,8 @@ nav.project-details {
   align-items: center; }
   .homepage-hero .jumbotron h1, .homepage-hero .jumbotron .lead {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 3px; }
   .homepage-hero .jumbotron h1 {
     color: #fff;
     font-size: 29px;
@@ -2603,11 +2610,6 @@ nav.project-details {
     border-top-color: #b3ccba;
     width: 68%;
     margin-bottom: 19px; }
-  .homepage-hero .jumbotron .lead {
-    font-weight: 700;
-    font-size: 11px;
-    color: #00a887;
-    letter-spacing: 3px; }
   .homepage-hero .projects {
     color: white;
     background-color: #00a887;
@@ -2708,7 +2710,7 @@ nav.project-details {
     font-size: 11px; }
 
 #about .top-half {
-  background-color: #000; }
+  background-color: #23201b; }
 
 #about .bottom-half img {
   max-width: 100%; }

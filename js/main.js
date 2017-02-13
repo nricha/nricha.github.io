@@ -8,6 +8,7 @@
   function setAboutPageHeight() {
     var windowHeight = $(window).height();
     $('#about .top-half').height(windowHeight / 2);
+    $('#about .bottom-half').height(windowHeight / 2);
   }
 
   function setHomePageHeight() {

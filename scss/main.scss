@@ -162,6 +162,13 @@ nav.project-details {
   }
 }
 
+.lead {
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  font-size: 11px;
+  color: $secondary-green;
+}
+
 #home {
   .homepage-hero {
     @include media-breakpoint-up(xs) {
@@ -200,6 +207,7 @@ nav.project-details {
     h1, .lead {
       text-align: center;
       text-transform: uppercase;
+      letter-spacing: 3px;
     }
     h1 {
       color: $white;
@@ -212,12 +220,6 @@ nav.project-details {
       border-top-color: #b3ccba;
       width: 68%;
       margin-bottom: 19px;
-    }
-    .lead {
-      font-weight: $font-weight-bold;
-      font-size: 11px;
-      color: $secondary-green;
-      letter-spacing: 3px;
     }
   }
   .projects {
@@ -319,7 +321,7 @@ $porfolio-img-height: 200px;
 
 #about {
   .top-half {
-    background-color: #000;
+    background-color: #23201b;
   }
   .bottom-half {
     img {
