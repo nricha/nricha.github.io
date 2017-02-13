@@ -33,5 +33,4 @@
       setHomePageHeight();
     }, 250);
   });
-
 }());
