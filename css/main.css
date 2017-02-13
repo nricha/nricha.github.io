@@ -2712,5 +2712,7 @@ nav.project-details {
 #about .top-half {
   background-color: #23201b; }
 
-#about .bottom-half img {
-  max-width: 100%; }
+#about .bottom-half {
+  margin-top: 20px; }
+  #about .bottom-half img {
+    max-width: 100%; }
