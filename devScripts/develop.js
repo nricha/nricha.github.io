@@ -40,12 +40,20 @@ function watchDirectoriesForRegen() {
     });
   });
   bsInstance.watch('./scss/*.scss').on('change', (filePath) => {
+    const outDir = path.join('./', 'css');
+    console.log(filePath , ' changed')
     sass.render({
       file: filePath,
       includePaths: [
         'node_modules/bootstrap/scss'
       ],
-      outFile: './css'
+      outFile: outDir
+    }, (err, result) => {
+      if(!err) {
+        const outFile = path.basename(filePath).replace('scss', 'css');
+        const outPath = path.join(outDir, outFile);
+        fs.writeFileSync(outPath, result.css.toString());
+      }
     })
   });
 }
