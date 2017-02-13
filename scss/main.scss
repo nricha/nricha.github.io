@@ -140,12 +140,16 @@ nav.project-details {
 }
 
 .homepage-row {
-  margin-top: calc(50px + 1rem);
+  @include media-breakpoint-up(xs) {
+    margin-top: calc(150px + 1rem);
+  }  
   @include media-breakpoint-up(md) {
     align-items: center;
+    margin-top: calc(150px + 1rem);
   }
   @include media-breakpoint-up(lg) {
     align-items: center;
+    margin-top: calc(150px + 1rem);
   }
 }
 

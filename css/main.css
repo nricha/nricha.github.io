@@ -2543,13 +2543,15 @@ nav.project-details {
   padding-left: 0; }
 
 .homepage-row {
-  margin-top: calc(50px + 1rem); }
+  margin-top: calc(150px + 1rem); }
   @media (min-width: 768px) {
     .homepage-row {
-      align-items: center; } }
+      align-items: center;
+      margin-top: calc(150px + 1rem); } }
   @media (min-width: 992px) {
     .homepage-row {
-      align-items: center; } }
+      align-items: center;
+      margin-top: calc(150px + 1rem); } }
 
 #home .homepage-hero {
   flex: 0 0 100%;
