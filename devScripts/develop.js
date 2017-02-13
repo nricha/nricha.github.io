@@ -1,10 +1,11 @@
-const ejs = require('ejs');
-const sass = require('node-sass');
 const browserSync = require('browser-sync');
 const bsInstance = browserSync.create();
 
+const sass = require('node-sass');
 const fs = require('fs')
 const path = require('path')
+
+const buildMethods = require('./buildTools');
 
 function getDirectories (srcpath, filter) {
   const dirs = fs.readdirSync(srcpath)
@@ -30,32 +31,8 @@ function watchDirectoriesForReload() {
 }
 
 function watchDirectoriesForRegen() {
-  bsInstance.watch('./projects/**/!(index.html)').on('change', (filePath) => {
-    const changedProject = path.dirname(filePath);
-    console.log('changed project', changedProject);
-    ejs.renderFile(path.join(changedProject, 'index.ejs'), {}, {}, (err, str) => {
-      if(!err) {
-        fs.writeFileSync(path.join(changedProject, 'index.html'), str);
-      }
-    });
-  });
-  bsInstance.watch('./scss/*.scss').on('change', (filePath) => {
-    const outDir = path.join('./', 'css');
-    console.log(filePath , ' changed')
-    sass.render({
-      file: filePath,
-      includePaths: [
-        'node_modules/bootstrap/scss'
-      ],
-      outFile: outDir
-    }, (err, result) => {
-      if(!err) {
-        const outFile = path.basename(filePath).replace('scss', 'css');
-        const outPath = path.join(outDir, outFile);
-        fs.writeFileSync(outPath, result.css.toString());
-      }
-    })
-  });
+  bsInstance.watch('./projects/**/!(index.html)').on('change', buildMethods.regenProjectWithFilepath);
+  bsInstance.watch('./scss/*.scss').on('change', buildMethods.regenScss);
 }
 
 watchDirectoriesForRegen();
