@@ -321,4 +321,9 @@ $porfolio-img-height: 200px;
   .top-half {
     background-color: #000;
   }
+  .bottom-half {
+    img {
+      max-width: 100%;
+    }
+  }
 }

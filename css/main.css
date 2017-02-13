@@ -2709,3 +2709,6 @@ nav.project-details {
 
 #about .top-half {
   background-color: #000; }
+
+#about .bottom-half img {
+  max-width: 100%; }
