@@ -86,8 +86,6 @@
   }
 }
 
-
-
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -316,5 +314,11 @@ $porfolio-img-height: 200px;
       color: fade-out(#000, .5);
       font-size: 11px;
     }
+  }
+}
+
+#about {
+  .top-half {
+    background-color: #000;
   }
 }

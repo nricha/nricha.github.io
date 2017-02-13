@@ -2706,3 +2706,6 @@ nav.project-details {
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 11px; }
+
+#about .top-half {
+  background-color: #000; }
