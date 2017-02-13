@@ -2502,6 +2502,8 @@ button.close {
     margin-bottom: 50px; }
     .project-body .project-img img {
       max-width: 100%; }
+    .project-body .project-img img.styleguide-border {
+      border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .nav-link {
   text-transform: uppercase;
