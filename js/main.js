@@ -13,7 +13,7 @@
 
   function setHomePageHeight() {
     var windowHeight = $(window).height();
-    $('#home').css('height', 'calc(' + windowHeight + 'px - calc(50px + 1rem))');
+    // $('#home').css('height', 'calc(' + windowHeight + 'px - calc(50px + 1rem))');
   }
 
 

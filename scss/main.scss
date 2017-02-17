@@ -119,13 +119,7 @@
 }
 
 body.show-bg {
-  @include media-breakpoint-up(md) {
-    background-image: url(../img/site-bg.jpg);
-    background-position-x: center;
-    background-position-y: 75%;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
 }
 
 html, body, .homepage-container, .homepage-row {
@@ -150,15 +144,20 @@ nav.project-details {
 
 .homepage-row {
   @include media-breakpoint-up(xs) {
-    margin-top: calc(150px + 1rem);
+    // margin-top: calc(150px + 1rem);
   }  
   @include media-breakpoint-up(md) {
     align-items: center;
-    margin-top: calc(150px + 1rem);
+    // margin-top: calc(150px + 1rem);
+    background-image: url(../img/site-bg.jpg);
+    background-position-x: center;
+    background-position-y: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   @include media-breakpoint-up(lg) {
     align-items: center;
-    margin-top: calc(150px + 1rem);
+    // margin-top: calc(150px + 1rem);
   }
 }
 
@@ -173,21 +172,19 @@ nav.project-details {
   .homepage-hero {
     @include media-breakpoint-up(xs) {
       @include make-col($size: 12);
-      margin-top: -100%;
+      margin-top: -50%;
     }
     @include media-breakpoint-up(sm) { 
       @include make-col($size: 12);
-      margin-top: -70%;
-    }
-    @include media-breakpoint-up(md) {
-      @include make-col-offset($size: 2);
-      @include make-col($size: 8);
       margin-top: -35%;
     }
+    @include media-breakpoint-up(md) {
+      @include make-col($size: 8);
+      margin-top: -18%;
+    }
     @include media-breakpoint-up(lg) {
-      @include make-col-offset($size: 3);
       @include make-col($size: 6);
-      margin-top: -30%;
+      margin-top: -15%;
     }
 
     h1 {
