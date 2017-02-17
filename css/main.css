@@ -2188,7 +2188,7 @@ mark,
   color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-toggler {
-  border-color: tranparent; }
+  border-color: transparent; }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
@@ -2669,8 +2669,6 @@ nav.project-details {
     margin-bottom: 40px;
     padding: 1rem;
     flex: 0 0 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
     max-width: 100%; }
     #portfolio .bottom-half .project-container img {
       max-height: 200px; }
@@ -2687,10 +2685,6 @@ nav.project-details {
         flex: 0 0 33.33333%;
         max-width: 33.33333%; } }
   #portfolio .bottom-half .project-title {
-    font-weight: 900;
-    font-size: 12.5px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     margin-top: 20px;
     color: rgba(0, 0, 0, 0.7); }
   #portfolio .bottom-half .project-type {
@@ -2701,10 +2695,62 @@ nav.project-details {
     color: rgba(0, 0, 0, 0.5);
     font-size: 11px; }
 
+#about .secondary-heading {
+  color: #00a887; }
+
+#about .about-text {
+  color: rgba(0, 0, 0, 0.5); }
+
 #about .top-half {
   background-color: #23201b; }
 
 #about .bottom-half {
   padding-top: 60px; }
+  @media (min-width: 576px) {
+    #about .bottom-half .photo-text-container {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    #about .bottom-half .photo-text-container {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%; } }
+  @media (max-width: 991px) {
+    #about .bottom-half .photo-text-container {
+      margin-top: 100%; } }
+  @media (min-width: 992px) {
+    #about .bottom-half .photo-text-container {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%; } }
   #about .bottom-half img {
     max-width: 100%; }
+
+#about .photo-column {
+  flex: 0 0 100%;
+  max-width: 100%; }
+  @media (max-width: 991px) {
+    #about .photo-column {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 992px) {
+    #about .photo-column {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; } }
+
+#about .text-column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 20px; }
+  @media (max-width: 991px) {
+    #about .text-column {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 992px) {
+    #about .text-column {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%; } }
+
+.secondary-heading {
+  font-weight: 900;
+  font-size: 12.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }

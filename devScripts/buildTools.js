@@ -24,6 +24,8 @@ const buildMethods = {
         const outFile = path.basename(filePath).replace('scss', 'css');
         const outPath = path.join(outDir, outFile);
         fs.writeFileSync(outPath, result.css.toString());
+      } else {
+        console.log(err);
       }
     });
   },

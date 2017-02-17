@@ -11,16 +11,9 @@
     $('#about .bottom-half').height(windowHeight / 2);
   }
 
-  function setHomePageHeight() {
-    var windowHeight = $(window).height();
-    // $('#home').css('height', 'calc(' + windowHeight + 'px - calc(50px + 1rem))');
-  }
-
-
   $().ready(function() {
     setPortfolioPageHeight();
     setAboutPageHeight();
-    setHomePageHeight();
   });
 
   var resizeTimer;
@@ -30,7 +23,6 @@
     setTimeout(function() {
       setPortfolioPageHeight();
       setAboutPageHeight();
-      setHomePageHeight();
     }, 250);
   });
 }());

@@ -1,3 +1,4 @@
+@import "../node_modules/bootstrap/scss/variables";
 $jumbotron-bg: transparent;
 $font-family-base: 'Lato', sans-serif;
 $font-weight-regular: 400;
@@ -7,7 +8,7 @@ $secondary-green: #00a887;
 $navbar-padding-y: 1.5rem;
 $navbar-light-color: #ddd;
 $navbar-light-hover-color: darken($navbar-light-color, 1);
-$navbar-light-toggler-border: tranparent;
+$navbar-light-toggler-border: transparent;
 $jumbotron-padding: 1rem;
 $grid-breakpoints: (
   xs: 0,
@@ -25,3 +26,5 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1440px
 );
+
+$porfolio-img-height: 200px;
