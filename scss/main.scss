@@ -302,6 +302,9 @@ nav.project-details {
   .secondary-heading {
     color: $secondary-green;
   }
+  ul.about-text {
+    list-style-type: none;
+  }
   .about-text {
     color: fade-out(#000, .5);
   }
@@ -321,7 +324,8 @@ nav.project-details {
         margin-top: 100%;
       }
       @include media-breakpoint-up(lg) { 
-        @include make-col($size: 8);
+        @include make-col($size: 10);
+        margin-top: 10%;
       }
     }
     padding-top: 60px;
@@ -335,8 +339,8 @@ nav.project-details {
       @include make-col($size: 12);
     }
     @include media-breakpoint-down(md) { 
-      padding-left: 20px;
-      padding-right: 20px;
+      // padding-left: 20px;
+      // padding-right: 20px;
     }
     @include media-breakpoint-up(lg) {
       @include make-col($size: 4);
@@ -346,7 +350,7 @@ nav.project-details {
     // col-lg-8 col-sm-12 row
     @include media-breakpoint-up(xs) {
       @include make-col($size: 12);
-      margin-top: 20px;
+      margin-top: 40px;
     }
     @include media-breakpoint-down(md) { 
       padding-left: 20px;
@@ -354,6 +358,12 @@ nav.project-details {
     }
     @include media-breakpoint-up(lg) {
       @include make-col($size: 8);
+      margin-top: 0;
+      padding: 0 0 0 50px
+    }
+    flex-direction: column;
+    .social-networks-row {
+      margin-top: 30px;
     }
   }
 }

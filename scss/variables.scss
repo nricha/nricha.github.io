@@ -27,4 +27,12 @@ $container-max-widths: (
   xxl: 1440px
 );
 
+$grid-gutter-widths: (
+  xs: 0,
+  sm: 0,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+);
+
 $porfolio-img-height: 200px;

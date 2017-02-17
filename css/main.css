@@ -14,12 +14,12 @@ html {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 0;
+  padding-left: 0; }
   @media (min-width: 576px) {
     .container {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 0;
+      padding-left: 0; } }
   @media (min-width: 768px) {
     .container {
       padding-right: 15px;
@@ -57,12 +57,12 @@ html {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 0;
+  padding-left: 0; }
   @media (min-width: 576px) {
     .container-fluid {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 0;
+      padding-left: 0; } }
   @media (min-width: 768px) {
     .container-fluid {
       padding-right: 15px;
@@ -79,12 +79,12 @@ html {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: 0;
+  margin-left: 0; }
   @media (min-width: 576px) {
     .row {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-right: 0;
+      margin-left: 0; } }
   @media (min-width: 768px) {
     .row {
       margin-right: -15px;
@@ -110,12 +110,12 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 0;
+  padding-left: 0; }
   @media (min-width: 576px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 0;
+      padding-left: 0; } }
   @media (min-width: 768px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
       padding-right: 15px;
@@ -2698,6 +2698,9 @@ nav.project-details {
 #about .secondary-heading {
   color: #00a887; }
 
+#about ul.about-text {
+  list-style-type: none; }
+
 #about .about-text {
   color: rgba(0, 0, 0, 0.5); }
 
@@ -2719,18 +2722,15 @@ nav.project-details {
       margin-top: 100%; } }
   @media (min-width: 992px) {
     #about .bottom-half .photo-text-container {
-      flex: 0 0 66.66667%;
-      max-width: 66.66667%; } }
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      margin-top: 10%; } }
   #about .bottom-half img {
     max-width: 100%; }
 
 #about .photo-column {
   flex: 0 0 100%;
   max-width: 100%; }
-  @media (max-width: 991px) {
-    #about .photo-column {
-      padding-left: 20px;
-      padding-right: 20px; } }
   @media (min-width: 992px) {
     #about .photo-column {
       flex: 0 0 33.33333%;
@@ -2739,7 +2739,8 @@ nav.project-details {
 #about .text-column {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-top: 20px; }
+  margin-top: 40px;
+  flex-direction: column; }
   @media (max-width: 991px) {
     #about .text-column {
       padding-left: 20px;
@@ -2747,7 +2748,11 @@ nav.project-details {
   @media (min-width: 992px) {
     #about .text-column {
       flex: 0 0 66.66667%;
-      max-width: 66.66667%; } }
+      max-width: 66.66667%;
+      margin-top: 0;
+      padding: 0 0 0 50px; } }
+  #about .text-column .social-networks-row {
+    margin-top: 30px; }
 
 .secondary-heading {
   font-weight: 900;
