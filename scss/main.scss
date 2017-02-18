@@ -114,6 +114,10 @@
   }
 }
 
+body {
+  position: relative;
+}
+
 #navbarNavAltMarkup {
   justify-content: flex-end;
 }
@@ -299,8 +303,11 @@ nav.project-details {
 }
 
 #about {
+  line-height: 1.75rem;
+  font-size: 15px;
   .secondary-heading {
     color: $secondary-green;
+    font-size: 14px;
   }
   ul.about-text {
     list-style-type: none;
@@ -361,6 +368,7 @@ nav.project-details {
       padding: 0 0 0 50px
     }
     flex-direction: column;
+    letter-spacing: 0.5px;
     .who-am-i {
       @include media-breakpoint-up(sm) { 
         @include make-col($size: 12);
@@ -370,7 +378,7 @@ nav.project-details {
       }
       @include media-breakpoint-up(lg) { 
         @include make-col($size: 6);
-        padding-right: 20px;
+        padding-right: 60px;
       }
       @include media-breakpoint-up(xl) { 
         @include make-col($size: 6);
@@ -381,13 +389,18 @@ nav.project-details {
         @include make-col($size: 12);
         max-height: 400px;
       }
+
       @include media-breakpoint-up(md) { 
         @include make-col($size: 12);
         max-height: 600px;
       }
+      @include media-breakpoint-down(md) {
+        margin-top: 30px;
+      }
       @include media-breakpoint-up(lg) { 
         @include make-col($size: 6);
         max-height: 800px;
+        padding-right: 60px;
       }
       @include media-breakpoint-up(xl) { 
         @include make-col($size: 6);
