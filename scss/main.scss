@@ -304,6 +304,7 @@ nav.project-details {
   }
   ul.about-text {
     list-style-type: none;
+    padding-left: 0;
   }
   .about-text {
     color: fade-out(#000, .5);
@@ -339,8 +340,6 @@ nav.project-details {
       @include make-col($size: 12);
     }
     @include media-breakpoint-down(md) { 
-      // padding-left: 20px;
-      // padding-right: 20px;
     }
     @include media-breakpoint-up(lg) {
       @include make-col($size: 4);
@@ -362,8 +361,45 @@ nav.project-details {
       padding: 0 0 0 50px
     }
     flex-direction: column;
+    .who-am-i {
+      @include media-breakpoint-up(sm) { 
+        @include make-col($size: 12);
+      }
+      @include media-breakpoint-up(md) { 
+        @include make-col($size: 12);
+      }
+      @include media-breakpoint-up(lg) { 
+        @include make-col($size: 6);
+      }
+      @include media-breakpoint-up(xl) { 
+        @include make-col($size: 6);
+      }
+    }
+    .what-i-do {
+       @include media-breakpoint-up(sm) { 
+        @include make-col($size: 12);
+        max-height: 400px;
+      }
+      @include media-breakpoint-up(md) { 
+        @include make-col($size: 12);
+        max-height: 600px;
+      }
+      @include media-breakpoint-up(lg) { 
+        @include make-col($size: 6);
+        max-height: 800px;
+      }
+      @include media-breakpoint-up(xl) { 
+        @include make-col($size: 6);
+        max-height: 800px;
+      }
+    }
     .social-networks-row {
       margin-top: 30px;
+      .social-networks-col {
+        @include media-breakpoint-up(sm) { 
+          @include make-col($size: 12);
+        }
+      }
     }
   }
 }

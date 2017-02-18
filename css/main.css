@@ -2699,7 +2699,8 @@ nav.project-details {
   color: #00a887; }
 
 #about ul.about-text {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
 
 #about .about-text {
   color: rgba(0, 0, 0, 0.5); }
@@ -2751,8 +2752,48 @@ nav.project-details {
       max-width: 66.66667%;
       margin-top: 0;
       padding: 0 0 0 50px; } }
+  @media (min-width: 576px) {
+    #about .text-column .who-am-i {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    #about .text-column .who-am-i {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+  @media (min-width: 992px) {
+    #about .text-column .who-am-i {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 1200px) {
+    #about .text-column .who-am-i {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 576px) {
+    #about .text-column .what-i-do {
+      flex: 0 0 100%;
+      max-width: 100%;
+      max-height: 400px; } }
+  @media (min-width: 768px) {
+    #about .text-column .what-i-do {
+      flex: 0 0 100%;
+      max-width: 100%;
+      max-height: 600px; } }
+  @media (min-width: 992px) {
+    #about .text-column .what-i-do {
+      flex: 0 0 50%;
+      max-width: 50%;
+      max-height: 800px; } }
+  @media (min-width: 1200px) {
+    #about .text-column .what-i-do {
+      flex: 0 0 50%;
+      max-width: 50%;
+      max-height: 800px; } }
   #about .text-column .social-networks-row {
     margin-top: 30px; }
+    @media (min-width: 576px) {
+      #about .text-column .social-networks-row .social-networks-col {
+        flex: 0 0 100%;
+        max-width: 100%; } }
 
 .secondary-heading {
   font-weight: 900;
