@@ -370,6 +370,7 @@ nav.project-details {
       }
       @include media-breakpoint-up(lg) { 
         @include make-col($size: 6);
+        padding-right: 20px;
       }
       @include media-breakpoint-up(xl) { 
         @include make-col($size: 6);

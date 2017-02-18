@@ -2763,7 +2763,8 @@ nav.project-details {
   @media (min-width: 992px) {
     #about .text-column .who-am-i {
       flex: 0 0 50%;
-      max-width: 50%; } }
+      max-width: 50%;
+      padding-right: 20px; } }
   @media (min-width: 1200px) {
     #about .text-column .who-am-i {
       flex: 0 0 50%;
