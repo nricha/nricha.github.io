@@ -130,6 +130,11 @@ nav.project-details {
   background-color: $secondary-green;
 }
 
+
+nav.about-page-nav {
+  background-color: $about-page-brown;
+}
+
 // bugfix
 .navbar-toggleable-sm > .container {
   @include media-breakpoint-down(xs) {
@@ -317,7 +322,7 @@ nav.project-details {
     color: fade-out(#000, .5);
   }
   .top-half {
-    background-color: #23201b;
+    background-color: $about-page-brown;
   }
   .bottom-half {
     //  col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1

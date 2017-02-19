@@ -2535,6 +2535,9 @@ html, body, .homepage-container, .homepage-row {
 nav.project-details {
   background-color: #00a887; }
 
+nav.about-page-nav {
+  background-color: #23201b; }
+
 @media (max-width: 575px) {
   .navbar-toggleable-sm > .container {
     width: 100%; } }
