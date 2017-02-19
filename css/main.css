@@ -2168,11 +2168,11 @@ mark,
 
 .navbar-light .navbar-brand,
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.9); }
+  color: #bfbfbf; }
   .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover,
   .navbar-light .navbar-toggler:focus,
   .navbar-light .navbar-toggler:hover {
-    color: rgba(0, 0, 0, 0.9); }
+    color: #bfbfbf; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #ddd; }
@@ -2185,7 +2185,7 @@ mark,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.open,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9); }
+  color: #bfbfbf; }
 
 .navbar-light .navbar-toggler {
   border-color: transparent; }
