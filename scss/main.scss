@@ -313,6 +313,7 @@ nav.about-page-nav {
   .secondary-heading {
     color: $secondary-green;
     font-size: 14px;
+    margin-bottom: 15px;
   }
   ul.about-text {
     list-style-type: none;
@@ -334,14 +335,14 @@ nav.about-page-nav {
         @include make-col($size: 10);
       }
       @include media-breakpoint-down(md) { 
-        margin-top: 100%;
+        margin-top: 20%;
       }
       @include media-breakpoint-up(lg) { 
         @include make-col($size: 10);
-        margin-top: 10%;
+        margin-top: 5%;
       }
     }
-    padding-top: 60px;
+   // padding-top: 60px;
     img {
       max-width: 100%;
     }
@@ -429,4 +430,6 @@ nav.about-page-nav {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
+.nomargin {
+  margin-bottom: 0;
+}
