@@ -38,16 +38,15 @@
       font-size: 22px;
       letter-spacing: 2px;
     }
-    // col-8 offset-lg-2 offset-md-2
     @include make-col($size: 8);
     
     @include media-breakpoint-up(md) { 
       @include make-col-offset(2);
     }
     margin-bottom: 60px;
+    align-self: flex-start;
   }
   .project-summary {
-    // col-lg-3 col-md-3 col-sm-6 offset-lg-2 offset-md-2
     @include media-breakpoint-up(sm) { 
       @include make-col($size: 10);
     }
@@ -58,7 +57,7 @@
     @include media-breakpoint-up(lg) { 
       @include make-col($size: 3);
     }
-
+    align-self: flex-start;
     margin-bottom: 180px;
     color: fade-out(#000, .5);
     letter-spacing: 1px;
@@ -75,14 +74,13 @@
   }
 
   .project-img {
-    align-self: center;
+    margin-bottom: 50px;
     img {
       max-width: 100%;
     }
     img.styleguide-border {
       border: 1px solid fade-out(#000, 0.9);
     }
-    margin-bottom: 50px;
   }
 }
 
