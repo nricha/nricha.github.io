@@ -2560,11 +2560,12 @@ nav.about-page-nav {
   font-size: 11px;
   color: #00a887; }
 
-#portfolio .top-half {
+.top-half {
   background-color: #fff;
   border-bottom: 1px solid rgba(35, 32, 27, 0.1);
-  z-index: 200; }
-  #portfolio .top-half.fixed-top-half {
+  z-index: 200;
+  height: 170px; }
+  .top-half.fixed-top-half {
     position: fixed;
     top: 0; }
 
@@ -2637,8 +2638,6 @@ nav.about-page-nav {
     padding-left: 0; }
   #about .about-text {
     color: rgba(0, 0, 0, 0.5); }
-  #about .top-half {
-    background-color: #23201b; }
   @media (min-width: 576px) {
     #about .bottom-half .photo-text-container {
       flex: 0 0 100%;
