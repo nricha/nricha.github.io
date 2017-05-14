@@ -1,5 +1,4 @@
 // Core variables and mixins
-@import "../node_modules/bootstrap/scss/variables";
 @import "./variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/custom";
@@ -83,7 +82,12 @@
     }
   }
 }
-
+.navbar .container {
+  margin-left: calc(125px - 1rem);
+  margin-right: calc(125px - 1rem);
+  padding-left: 0;
+  padding-right: 0;
+}
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -95,21 +99,8 @@
   }
 }
 
-.navbar-brand > svg {
-  path {
-    @include media-breakpoint-down(sm) {
-      fill: rgba(0, 0, 0, 0.5);
-    }
-  }
-}
-
-.navbar-light .navbar-nav .nav-link {
-  @include media-breakpoint-up(xs) {
-    color: black;
-  }
-  @include media-breakpoint-up(md) {
-    color: white;
-  }
+.navbar-brand > img {
+  width: 300px;
 }
 
 body {
@@ -146,16 +137,12 @@ nav.about-page-nav {
 }
 
 .homepage-row {
-  @include media-breakpoint-up(md) {
-    align-items: center;
+  padding: 175px 125px 125px;
+  .homepage-bg {
+    width: 100%;
+    height: 100%;
     background-image: url(../img/site-bg.jpg);
-    background-position-x: center;
-    background-position-y: 75%;
     background-size: cover;
-    background-repeat: no-repeat;
-  }
-  @include media-breakpoint-up(lg) {
-    align-items: center;
   }
 }
 
@@ -166,87 +153,26 @@ nav.about-page-nav {
   color: $secondary-green;
 }
 
-#home {
-  .homepage-hero {
-    @include media-breakpoint-up(xs) {
-      @include make-col($size: 12);
-      margin-top: -50%;
-    }
-    @include media-breakpoint-up(sm) { 
-      @include make-col($size: 12);
-      margin-top: -35%;
-    }
-    @include media-breakpoint-up(md) {
-      @include make-col($size: 8);
-      margin-top: -18%;
-    }
-    @include media-breakpoint-up(lg) {
-      @include make-col($size: 6);
-      margin-top: -15%;
-    }
-
-    h1 {
-      color: $black;
-      @include media-breakpoint-up(md) {
-        color: $white;
-      }
-    }
-  }  
-}
-
-.homepage-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .jumbotron {
-    h1, .lead {
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-    }
-    h1 {
-      color: $white;
-      font-size: 29px;
-      font-weight: $font-weight-bold;
-      letter-spacing: 7px;
-      margin-bottom: 25px;
-    }
-    .jumbotron-hr {
-      border-top-color: #b3ccba;
-      width: 68%;
-      margin-bottom: 19px;
-    }
-  }
-  .projects {
-    @include button-variant($color: white, $background: $secondary-green, $border: transparent);
-    @include button-size($padding-y: 13px, $padding-x: 20px, $font-size: 11px, $border-radius: 0);
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    word-spacing: 1.5px;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
 #portfolio {
   .top-half {
-    background-color: $secondary-green;
-    z-index: 200;    
+    background-color: $white;
+    border-bottom: 1px solid rgba(#23201b, 0.10);
+    z-index: 200;
+    &.fixed-top-half {
+      position: fixed;
+      top: 0;
+    }
   }
   .fixed-jumbotron {
     position: fixed;
     top: 0;
   }
-  .fixed-top-half {
-    position: fixed;
-    top: 0;
-    height: 100px;
-  }
   .bottom-half {
     background-color: #fff;
     padding-top: 60px;
+    &.fixed-top-half {
+      margin-top: 170px;
+    }
     @include media-breakpoint-up(xs) {
       max-width: map-get($container-max-widths, xs);
     }
