@@ -2547,12 +2547,12 @@ nav.about-page-nav {
   padding-left: 0; }
 
 .homepage-row {
-  padding: 175px 125px 125px; }
-  .homepage-row .homepage-bg {
-    width: 100%;
+  padding: 175px 125px 75px; }
+  .homepage-row .crop-site-bg {
     height: 100%;
-    background-image: url(../img/site-bg.jpg);
-    background-size: cover; }
+    overflow: hidden; }
+    .homepage-row .crop-site-bg img {
+      width: 100%; }
 
 .lead {
   text-transform: uppercase;

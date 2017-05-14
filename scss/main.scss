@@ -137,12 +137,13 @@ nav.about-page-nav {
 }
 
 .homepage-row {
-  padding: 175px 125px 125px;
-  .homepage-bg {
-    width: 100%;
+  padding: 175px 125px 75px;
+  .crop-site-bg {
     height: 100%;
-    background-image: url(../img/site-bg.jpg);
-    background-size: cover;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
 }
 
