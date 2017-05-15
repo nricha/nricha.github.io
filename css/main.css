@@ -3859,9 +3859,11 @@ button.close {
 .navbar .container {
   margin-left: calc(125px - 1rem);
   margin-right: calc(125px - 1rem);
-  width: 100%;
   padding-left: 0;
   padding-right: 0; }
+  @media (min-width: 768px) {
+    .navbar .container {
+      width: 100%; } }
 
 .nav-link {
   text-transform: uppercase;
@@ -3904,6 +3906,25 @@ nav.about-page-nav {
     overflow: hidden; }
     .homepage-row .crop-site-bg img {
       width: 100%; }
+    .homepage-row .crop-site-bg .site-bg-text-container {
+      left: 50%;
+      top: 50%;
+      margin-left: -100px;
+      position: absolute;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 3px; }
+      .homepage-row .crop-site-bg .site-bg-text-container .text {
+        margin-bottom: 15px;
+        margin-top: 15px; }
+      .homepage-row .crop-site-bg .site-bg-text-container .golden-slash {
+        border-bottom: 5px solid #b38e50;
+        width: 25px;
+        transform: rotate(45deg); }
 
 .lead {
   text-transform: uppercase;

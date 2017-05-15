@@ -86,13 +86,17 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
     }
   }
 }
+
 .navbar .container {
   margin-left: calc(125px - 1rem);
   margin-right: calc(125px - 1rem);
-  width: 100%;
   padding-left: 0;
   padding-right: 0;
+  @include media-breakpoint-up(md) { 
+    width: 100%;
+  }
 }
+
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -147,6 +151,28 @@ nav.about-page-nav {
     overflow: hidden;
     img {
       width: 100%;
+    }
+    .site-bg-text-container {
+      left: 50%;
+      top: 50%;
+      margin-left: -100px;
+      position: absolute;
+      color: $white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-weight: $font-weight-regular;
+      letter-spacing: 3px;
+      .text {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      .golden-slash {
+        border-bottom: 5px solid $nav-gold;
+        width: 25px;
+        transform: rotate(45deg);
+      }
     }
   }
 }
@@ -278,8 +304,6 @@ nav.about-page-nav {
     // col-lg-4 col-sm-12 
     @include media-breakpoint-up(xs) {
       @include make-col($size: 12);
-    }
-    @include media-breakpoint-down(md) { 
     }
     @include media-breakpoint-up(lg) {
       @include make-col($size: 4);
