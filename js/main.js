@@ -1,18 +1,11 @@
 (function() {
 
-  function setPortfolioPageHeight() {
-    var windowHeight = $(window).height();
-    // $('#portfolio .top-half').height('170px');
-  }
-
   function setAboutPageHeight() {
     var windowHeight = $(window).height();
-    // $('#about .top-half').height('170px');
     $('#about').height(windowHeight + 'px');
   }
 
   $().ready(function() {
-    setPortfolioPageHeight();
     setAboutPageHeight();
   });
 
@@ -21,7 +14,6 @@
   $(window).resize(function() {
     clearTimeout(resizeTimer);
     setTimeout(function() {
-      setPortfolioPageHeight();
       setAboutPageHeight();
     }, 250);
   });

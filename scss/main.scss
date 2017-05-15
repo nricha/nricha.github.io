@@ -23,8 +23,11 @@
 @import "../node_modules/bootstrap/scss/utilities/position";
 @import "../node_modules/bootstrap/scss/utilities/_spacing.scss";
 
+$nav-border-bottom: 1px solid rgba(#23201b, 0.10);
+
 .project-nav {
-  background-color: $secondary-green;;
+  background-color: $white;
+  border-bottom: $nav-border-bottom;
 }
 
 .project-body {
@@ -121,7 +124,6 @@ nav.project-details {
   background-color: $secondary-green;
 }
 
-
 nav.about-page-nav {
   background-color: $about-page-brown;
 }
@@ -158,7 +160,7 @@ nav.about-page-nav {
 
 .top-half {
   background-color: $white;
-  border-bottom: 1px solid rgba(#23201b, 0.10);
+  border-bottom: $nav-border-bottom;
   z-index: 200;
   height: 170px;
   &.fixed-top-half {
@@ -166,14 +168,14 @@ nav.about-page-nav {
     top: 0;
   }
 }
+
+.bottom-half {
+  background-color: #fff;
+  padding-top: 90px;
+}
+
 #portfolio {
-  .fixed-jumbotron {
-    position: fixed;
-    top: 0;
-  }
   .bottom-half {
-    background-color: #fff;
-    padding-top: 60px;
     &.fixed-top-half {
       margin-top: 170px;
     }
@@ -239,9 +241,10 @@ nav.about-page-nav {
   line-height: 1.75rem;
   font-size: 15px;
   .secondary-heading {
-    color: $secondary-green;
+    color: $nav-gold;
     font-size: 14px;
     margin-bottom: 15px;
+    font-weight: $font-weight-regular;
   }
   ul.about-text {
     list-style-type: none;
@@ -264,10 +267,9 @@ nav.about-page-nav {
       }
       @include media-breakpoint-up(lg) { 
         @include make-col($size: 10);
-        margin-top: 5%;
+        margin-top: 4%;
       }
     }
-   // padding-top: 60px;
     img {
       max-width: 100%;
     }

@@ -35,7 +35,8 @@ $grid-gutter-widths: (
 $porfolio-img-height: 200px;
 $about-page-brown: #23201b;
 
-$navbar-light-color: #b38e50;
+$nav-gold: #b38e50;
+$navbar-light-color: $nav-gold;
 $navbar-light-hover-color: darken($navbar-light-color, 1);
 $navbar-light-toggler-border: transparent;
 $navbar-light-active-color:         rgba($navbar-light-color,.5);
