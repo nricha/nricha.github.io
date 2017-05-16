@@ -6,9 +6,6 @@ $font-weight-bold: 700;
 $font-weight-black: 900;
 $secondary-green: #00a887;
 $navbar-padding-y: 1.5rem;
-$navbar-light-color: #ddd;
-$navbar-light-hover-color: darken($navbar-light-color, 1);
-$navbar-light-toggler-border: transparent;
 $jumbotron-padding: 1rem;
 $grid-breakpoints: (
   xs: 0,
@@ -37,4 +34,13 @@ $grid-gutter-widths: (
 
 $porfolio-img-height: 200px;
 $about-page-brown: #23201b;
-$navbar-light-active-color: scale_color(#fff, $lightness: -25%)
+
+$nav-gold: #b38e50;
+$navbar-light-color: $nav-gold;
+$navbar-light-hover-color: darken($navbar-light-color, 1);
+$navbar-light-toggler-border: transparent;
+$navbar-light-active-color:         rgba($navbar-light-color,.5);
+$navbar-light-disabled-color:       rgba($black,.3);
+$navbar-padding-y: 4rem;
+
+$nav-item-margin: 100px;
