@@ -231,7 +231,7 @@ nav.about-page-nav {
     }
     .project-container {
       min-height: $porfolio-img-height + 50px;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       padding: 1rem;
       img {
         max-height: $porfolio-img-height;
@@ -268,7 +268,7 @@ nav.about-page-nav {
   line-height: 1.75rem;
   font-size: 15px;
   .secondary-heading {
-    color: $nav-gold;
+    color: $black;
     font-size: 14px;
     margin-bottom: 15px;
     font-weight: $font-weight-regular;
@@ -293,7 +293,7 @@ nav.about-page-nav {
         margin-top: 20%;
       }
       @include media-breakpoint-up(lg) { 
-        @include make-col($size: 10);
+        @include make-col($size: 7);
         margin-top: 4%;
       }
     }
@@ -307,7 +307,7 @@ nav.about-page-nav {
       @include make-col($size: 12);
     }
     @include media-breakpoint-up(lg) {
-      @include make-col($size: 4);
+      @include make-col($size: 6);
     }
   }
   .text-column {
@@ -321,9 +321,9 @@ nav.about-page-nav {
       padding-right: 20px;
     }
     @include media-breakpoint-up(lg) {
-      @include make-col($size: 8);
+      @include make-col($size: 6);
       margin-top: 0;
-      padding: 0 0 0 50px
+      padding-left: 50px;
     }
     flex-direction: column;
     letter-spacing: 0.5px;
@@ -335,34 +335,29 @@ nav.about-page-nav {
         @include make-col($size: 12);
       }
       @include media-breakpoint-up(lg) { 
-        @include make-col($size: 6);
-        padding-right: 60px;
+        @include make-col($size: 12);
       }
       @include media-breakpoint-up(xl) { 
-        @include make-col($size: 6);
+        @include make-col($size: 12);
       }
     }
     .what-i-do {
+      margin-top: 30px;
        @include media-breakpoint-up(sm) { 
         @include make-col($size: 12);
-        max-height: 400px;
       }
 
       @include media-breakpoint-up(md) { 
         @include make-col($size: 12);
-        max-height: 600px;
       }
       @include media-breakpoint-down(md) {
         margin-top: 30px;
       }
       @include media-breakpoint-up(lg) { 
-        @include make-col($size: 6);
-        max-height: 800px;
-        padding-right: 60px;
+        @include make-col($size: 12);
       }
       @include media-breakpoint-up(xl) { 
-        @include make-col($size: 6);
-        max-height: 800px;
+        @include make-col($size: 12);
       }
     }
     .social-networks-row {
@@ -372,6 +367,18 @@ nav.about-page-nav {
           @include make-col($size: 12);
         }
       }
+    }
+    .resume-button {
+      border: 1px solid $nav-gold;
+      background-color: $nav-gold;
+      color: $white;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 55px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      letter-spacing: 1.25px;
     }
   }
 }

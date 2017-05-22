@@ -3974,7 +3974,7 @@ nav.about-page-nav {
 
 #portfolio .bottom-half .project-container {
   min-height: 250px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding: 1rem;
   flex: 0 0 100%;
   max-width: 100%; }
@@ -4009,7 +4009,7 @@ nav.about-page-nav {
   line-height: 1.75rem;
   font-size: 15px; }
   #about .secondary-heading {
-    color: #b38e50;
+    color: #000;
     font-size: 14px;
     margin-bottom: 15px;
     font-weight: 400; }
@@ -4031,8 +4031,8 @@ nav.about-page-nav {
       margin-top: 20%; } }
   @media (min-width: 992px) {
     #about .bottom-half .photo-text-container {
-      flex: 0 0 83.33333%;
-      max-width: 83.33333%;
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
       margin-top: 4%; } }
   #about .bottom-half img {
     max-width: 100%; }
@@ -4041,8 +4041,8 @@ nav.about-page-nav {
     max-width: 100%; }
     @media (min-width: 992px) {
       #about .photo-column {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%; } }
+        flex: 0 0 50%;
+        max-width: 50%; } }
   #about .text-column {
     flex: 0 0 100%;
     max-width: 100%;
@@ -4055,10 +4055,10 @@ nav.about-page-nav {
         padding-right: 20px; } }
     @media (min-width: 992px) {
       #about .text-column {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
+        flex: 0 0 50%;
+        max-width: 50%;
         margin-top: 0;
-        padding: 0 0 0 50px; } }
+        padding-left: 50px; } }
     @media (min-width: 576px) {
       #about .text-column .who-am-i {
         flex: 0 0 100%;
@@ -4069,43 +4069,50 @@ nav.about-page-nav {
         max-width: 100%; } }
     @media (min-width: 992px) {
       #about .text-column .who-am-i {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-right: 60px; } }
+        flex: 0 0 100%;
+        max-width: 100%; } }
     @media (min-width: 1200px) {
       #about .text-column .who-am-i {
-        flex: 0 0 50%;
-        max-width: 50%; } }
-    @media (min-width: 576px) {
-      #about .text-column .what-i-do {
         flex: 0 0 100%;
-        max-width: 100%;
-        max-height: 400px; } }
-    @media (min-width: 768px) {
-      #about .text-column .what-i-do {
-        flex: 0 0 100%;
-        max-width: 100%;
-        max-height: 600px; } }
-    @media (max-width: 991px) {
-      #about .text-column .what-i-do {
-        margin-top: 30px; } }
-    @media (min-width: 992px) {
-      #about .text-column .what-i-do {
-        flex: 0 0 50%;
-        max-width: 50%;
-        max-height: 800px;
-        padding-right: 60px; } }
-    @media (min-width: 1200px) {
-      #about .text-column .what-i-do {
-        flex: 0 0 50%;
-        max-width: 50%;
-        max-height: 800px; } }
+        max-width: 100%; } }
+    #about .text-column .what-i-do {
+      margin-top: 30px; }
+      @media (min-width: 576px) {
+        #about .text-column .what-i-do {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      @media (min-width: 768px) {
+        #about .text-column .what-i-do {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      @media (max-width: 991px) {
+        #about .text-column .what-i-do {
+          margin-top: 30px; } }
+      @media (min-width: 992px) {
+        #about .text-column .what-i-do {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      @media (min-width: 1200px) {
+        #about .text-column .what-i-do {
+          flex: 0 0 100%;
+          max-width: 100%; } }
     #about .text-column .social-networks-row {
       margin-top: 30px; }
       @media (min-width: 576px) {
         #about .text-column .social-networks-row .social-networks-col {
           flex: 0 0 100%;
           max-width: 100%; } }
+    #about .text-column .resume-button {
+      border: 1px solid #b38e50;
+      background-color: #b38e50;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 55px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      letter-spacing: 1.25px; }
 
 .secondary-heading {
   font-weight: 900;
