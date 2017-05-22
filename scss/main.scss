@@ -38,7 +38,7 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
     h1 {
       font-weight: $font-weight-bold;
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 18px;
       letter-spacing: 2px;
     }
     @include make-col($size: 8);
@@ -46,7 +46,7 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
     @include media-breakpoint-up(md) { 
       @include make-col-offset(2);
     }
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     align-self: flex-start;
   }
   .project-summary {
@@ -61,17 +61,18 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
       @include make-col($size: 3);
     }
     align-self: flex-start;
-    margin-bottom: 180px;
+    margin-bottom: 200px;
     color: fade-out(#000, .5);
     letter-spacing: 1px;
     line-height: 1.7;
+    font-size: 14px;
   }
 
   .project-img-caption {
     margin: 30px 0 45px 0;
     text-transform: uppercase;
     align-self: center;
-    font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
     font-size: 12.5px;
     letter-spacing: 2px;
   }
