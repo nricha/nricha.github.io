@@ -3858,8 +3858,8 @@ button.close {
       border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .navbar .container {
-  margin-left: calc(125px - 1rem);
-  margin-right: calc(125px - 1rem);
+  margin-left: calc(145px - 1rem);
+  margin-right: calc(145px - 1rem);
   padding-left: 0;
   padding-right: 0; }
   @media (min-width: 768px) {
@@ -3870,9 +3870,11 @@ button.close {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.7rem; }
-  @media (min-width: 768px) {
-    .nav-link.last {
-      margin-left: 30px; } }
+  .nav-link.last {
+    margin-right: -0.5rem; }
+    @media (min-width: 768px) {
+      .nav-link.last {
+        margin-left: 30px; } }
 
 .navbar-brand > img {
   width: 300px; }

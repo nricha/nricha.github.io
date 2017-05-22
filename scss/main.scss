@@ -89,8 +89,8 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
 }
 
 .navbar .container {
-  margin-left: calc(125px - 1rem);
-  margin-right: calc(125px - 1rem);
+  margin-left: calc(145px - 1rem);
+  margin-right: calc(145px - 1rem);
   padding-left: 0;
   padding-right: 0;
   @include media-breakpoint-up(md) { 
@@ -106,6 +106,7 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
     @include media-breakpoint-up(md) {
       margin-left: 30px;
     }
+    margin-right: -0.5rem;
   }
 }
 
