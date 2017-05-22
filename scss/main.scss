@@ -293,8 +293,8 @@ nav.about-page-nav {
         margin-top: 20%;
       }
       @include media-breakpoint-up(lg) { 
-        @include make-col($size: 7);
-        margin-top: 4%;
+        @include make-col($size: 6);
+        margin-top: 160px;
       }
     }
     img {
@@ -323,10 +323,11 @@ nav.about-page-nav {
     @include media-breakpoint-up(lg) {
       @include make-col($size: 6);
       margin-top: 0;
-      padding-left: 50px;
+      padding-left: 55px;
     }
     flex-direction: column;
     letter-spacing: 0.5px;
+    justify-content: center;
     .who-am-i {
       @include media-breakpoint-up(sm) { 
         @include make-col($size: 12);
@@ -370,8 +371,7 @@ nav.about-page-nav {
     }
     .resume-button {
       border: 1px solid $nav-gold;
-      background-color: $nav-gold;
-      color: $white;
+      color: $nav-gold;
       justify-content: center;
       align-items: center;
       width: 225px;
@@ -379,6 +379,12 @@ nav.about-page-nav {
       text-transform: uppercase;
       margin-top: 30px;
       letter-spacing: 1.25px;
+      font-size: 12px;
+      &:hover {
+        background-color: $nav-gold;
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 }
