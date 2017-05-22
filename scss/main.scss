@@ -103,9 +103,6 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
   letter-spacing: 3px;
   font-size: 0.7rem;
   &.last {
-    @include media-breakpoint-up(md) {
-      margin-left: 30px;
-    }
     margin-right: -0.5rem;
   }
 }

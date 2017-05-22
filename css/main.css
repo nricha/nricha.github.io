@@ -3872,9 +3872,6 @@ button.close {
   font-size: 0.7rem; }
   .nav-link.last {
     margin-right: -0.5rem; }
-    @media (min-width: 768px) {
-      .nav-link.last {
-        margin-left: 30px; } }
 
 .navbar-brand > img {
   width: 300px; }
