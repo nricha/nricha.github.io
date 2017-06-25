@@ -37,3 +37,4 @@ function watchDirectoriesForRegen() {
 
 watchDirectoriesForRegen();
 watchDirectoriesForReload();
+buildMethods.regenHomePage();

@@ -51,6 +51,11 @@ const buildMethods = {
       return path.join('./', 'projects', projectName);
     });
     allProjectDirPaths.forEach(buildMethods.regenProjectWithDirPath);
+  },
+  regenHomePage: () => {
+    console
+    const homePage = path.join('./');
+    buildMethods.regenProjectWithDirPath(homePage);
   }
 };
 
