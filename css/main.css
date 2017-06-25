@@ -3907,7 +3907,8 @@ nav.about-page-nav {
   .homepage-row .crop-site-bg {
     width: 100%;
     overflow: hidden; }
-    .homepage-row .crop-site-bg img {
+    .homepage-row .crop-site-bg .img {
+      background-image: url(../img/pexels-photo.jpg);
       height: 90%;
       width: 100%; }
     .homepage-row .crop-site-bg .site-bg-text-container {

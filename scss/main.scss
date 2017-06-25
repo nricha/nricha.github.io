@@ -151,7 +151,8 @@ nav.about-page-nav {
   .crop-site-bg {
     width: 100%;
     overflow: hidden;
-    img {
+    .img {
+      background-image: url(../img/pexels-photo.jpg);
       height: 90%;
       width: 100%;
     }
