@@ -151,32 +151,25 @@ nav.about-page-nav {
   .crop-site-bg {
     width: 100%;
     overflow: hidden;
-    .img {
-      background-image: url(../img/pexels-photo.jpg);
-      height: 90%;
-      width: 100%;
-    }
-    .site-bg-text-container {
-      left: 50%;
-      top: 50%;
-      margin-left: -100px;
-      position: absolute;
-      color: $white;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    background-image: url(../img/pexels-photo.jpg);
+    background-size: auto 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 270px;
+    .richa-name {
+      color: #636363;
       text-transform: uppercase;
+      font-size: 42px;
+      font-family: 'EB Garamond', serif;
       font-weight: $font-weight-regular;
-      letter-spacing: 3px;
-      .text {
-        margin-bottom: 15px;
-        margin-top: 15px;
-      }
-      .golden-slash {
-        border-bottom: 5px solid $nav-gold;
-        width: 25px;
-        transform: rotate(45deg);
-      }
+      letter-spacing: 9px;
+    }
+    .richa-title {
+      color: $nav-gold;
+      margin-top: 10px;
+      letter-spacing: 2px;
     }
   }
 }

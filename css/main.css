@@ -3906,30 +3906,25 @@ nav.about-page-nav {
   padding: 175px 0 0; }
   .homepage-row .crop-site-bg {
     width: 100%;
-    overflow: hidden; }
-    .homepage-row .crop-site-bg .img {
-      background-image: url(../img/pexels-photo.jpg);
-      height: 90%;
-      width: 100%; }
-    .homepage-row .crop-site-bg .site-bg-text-container {
-      left: 50%;
-      top: 50%;
-      margin-left: -100px;
-      position: absolute;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    overflow: hidden;
+    background-image: url(../img/pexels-photo.jpg);
+    background-size: auto 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 270px; }
+    .homepage-row .crop-site-bg .richa-name {
+      color: #636363;
       text-transform: uppercase;
+      font-size: 42px;
+      font-family: 'EB Garamond', serif;
       font-weight: 400;
-      letter-spacing: 3px; }
-      .homepage-row .crop-site-bg .site-bg-text-container .text {
-        margin-bottom: 15px;
-        margin-top: 15px; }
-      .homepage-row .crop-site-bg .site-bg-text-container .golden-slash {
-        border-bottom: 5px solid #b38e50;
-        width: 25px;
-        transform: rotate(45deg); }
+      letter-spacing: 9px; }
+    .homepage-row .crop-site-bg .richa-title {
+      color: #b38e50;
+      margin-top: 10px;
+      letter-spacing: 2px; }
 
 .lead {
   text-transform: uppercase;
