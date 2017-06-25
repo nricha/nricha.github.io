@@ -3825,11 +3825,11 @@ button.close {
         margin-left: 16.66667%; } }
   .project-body .project-summary {
     align-self: flex-start;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
     color: rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
-    line-height: 1.7;
-    font-size: 14px; }
+    line-height: 1.8;
+    font-size: 13px; }
     @media (min-width: 576px) {
       .project-body .project-summary {
         flex: 0 0 83.33333%;
@@ -3851,7 +3851,7 @@ button.close {
     font-size: 12.5px;
     letter-spacing: 2px; }
   .project-body .project-img {
-    margin-bottom: 50px; }
+    margin-bottom: 100px; }
     .project-body .project-img img {
       max-width: 100%; }
     .project-body .project-img img.styleguide-border {
