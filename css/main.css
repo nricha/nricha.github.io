@@ -3803,8 +3803,7 @@ button.close {
     margin-bottom: auto !important; } }
 
 .project-nav {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(35, 32, 27, 0.1); }
+  background-color: #fff; }
 
 .project-body {
   display: flex;
@@ -3902,29 +3901,27 @@ nav.about-page-nav {
   padding-right: 0;
   padding-left: 0; }
 
-.homepage-row {
-  padding: 175px 0 0; }
-  .homepage-row .crop-site-bg {
-    width: 100%;
-    overflow: hidden;
-    background-image: url(../img/pexels-photo.jpg);
-    background-size: auto 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 270px; }
-    .homepage-row .crop-site-bg .richa-name {
-      color: #636363;
-      text-transform: uppercase;
-      font-size: 42px;
-      font-family: 'EB Garamond', serif;
-      font-weight: 400;
-      letter-spacing: 9px; }
-    .homepage-row .crop-site-bg .richa-title {
-      color: #b38e50;
-      margin-top: 10px;
-      letter-spacing: 2px; }
+.homepage-row .crop-site-bg {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/pexels-photo.jpg);
+  background-size: auto 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 370px; }
+  .homepage-row .crop-site-bg .richa-name {
+    color: #636363;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    letter-spacing: 9px; }
+  .homepage-row .crop-site-bg .richa-title {
+    color: #b38e50;
+    margin-top: 10px;
+    letter-spacing: 2px; }
 
 .lead {
   text-transform: uppercase;
@@ -4174,3 +4171,9 @@ nav.about-page-nav {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.img-box-shadow {
+  box-shadow: 4px 4px 33px -2px #3e3a3a; }
+
+.img-box-shadow-light {
+  box-shadow: 4px 4px 33px -2px #d9d9d9; }

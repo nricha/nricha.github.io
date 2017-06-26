@@ -27,7 +27,6 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
 
 .project-nav {
   background-color: $white;
-  border-bottom: $nav-border-bottom;
 }
 
 .project-body {
@@ -147,7 +146,6 @@ nav.about-page-nav {
 }
 
 .homepage-row {
-  padding: 175px 0 0;
   .crop-site-bg {
     width: 100%;
     overflow: hidden;
@@ -157,7 +155,7 @@ nav.about-page-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 270px;
+    padding-top: 370px;
     .richa-name {
       color: #636363;
       text-transform: uppercase;
@@ -451,4 +449,12 @@ $fade-in-duration: 1s;
   100% {
     opacity:1;
   }
+}
+
+.img-box-shadow {
+  box-shadow: 4px 4px 33px -2px rgb(62, 58, 58);
+}
+
+.img-box-shadow-light {
+  box-shadow: 4px 4px 33px -2px #d9d9d9;
 }
