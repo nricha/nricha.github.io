@@ -1945,7 +1945,7 @@ mark,
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 4rem 1rem; }
+  padding: 3rem 1rem; }
 
 .navbar-brand {
   display: inline-block;
@@ -3877,7 +3877,7 @@ button.close {
 
 .navbar-brand > svg {
   width: 50px;
-  height: 50px; }
+  height: 27px; }
 
 body {
   position: relative; }
