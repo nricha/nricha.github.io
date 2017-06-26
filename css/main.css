@@ -3931,10 +3931,7 @@ nav.about-page-nav {
 
 .bottom-half {
   background-color: #fff;
-  padding-top: 90px; }
-
-#portfolio .bottom-half.fixed-top-half {
-  margin-top: 170px; }
+  padding-top: 200px; }
 
 @media (min-width: 576px) {
   #portfolio .bottom-half {
@@ -4006,22 +4003,22 @@ nav.about-page-nav {
   #about .about-text {
     color: rgba(0, 0, 0, 0.5); }
   @media (min-width: 576px) {
-    #about .bottom-half .photo-text-container {
+    #about .photo-text-container {
       flex: 0 0 100%;
       max-width: 100%; } }
   @media (min-width: 768px) {
-    #about .bottom-half .photo-text-container {
+    #about .photo-text-container {
       flex: 0 0 83.33333%;
       max-width: 83.33333%; } }
   @media (max-width: 991px) {
-    #about .bottom-half .photo-text-container {
+    #about .photo-text-container {
       margin-top: 20%; } }
   @media (min-width: 992px) {
-    #about .bottom-half .photo-text-container {
+    #about .photo-text-container {
       flex: 0 0 50%;
       max-width: 50%;
       margin-top: 160px; } }
-  #about .bottom-half img {
+  #about .photo-text-container img {
     max-width: 100%; }
   #about .photo-column {
     flex: 0 0 100%;
@@ -4177,3 +4174,6 @@ nav.about-page-nav {
 
 .img-box-shadow-light {
   box-shadow: 4px 4px 33px -2px #d9d9d9; }
+
+.img-box-shadow-lighter {
+  box-shadow: 4px 4px 33px -2px #e3e3e3; }

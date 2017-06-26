@@ -181,14 +181,11 @@ nav.about-page-nav {
 
 .bottom-half {
   background-color: #fff;
-  padding-top: 90px;
+  padding-top: 200px;
 }
 
 #portfolio {
   .bottom-half {
-    &.fixed-top-half {
-      margin-top: 170px;
-    }
     @include media-breakpoint-up(xs) {
       max-width: map-get($container-max-widths, xs);
     }
@@ -263,29 +260,27 @@ nav.about-page-nav {
   .about-text {
     color: fade-out(#000, .5);
   }
-  .bottom-half {
-    //  col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1
-    .photo-text-container {
-      @include media-breakpoint-up(sm) { 
-        @include make-col($size: 12);
-      }
-      @include media-breakpoint-up(md) { 
-        @include make-col($size: 10);
-      }
-      @include media-breakpoint-down(md) { 
-        margin-top: 20%;
-      }
-      @include media-breakpoint-up(lg) { 
-        @include make-col($size: 6);
-        margin-top: 160px;
-      }
+
+  .photo-text-container {
+    @include media-breakpoint-up(sm) { 
+      @include make-col($size: 12);
     }
+    @include media-breakpoint-up(md) { 
+      @include make-col($size: 10);
+    }
+    @include media-breakpoint-down(md) { 
+      margin-top: 20%;
+    }
+    @include media-breakpoint-up(lg) { 
+      @include make-col($size: 6);
+      margin-top: 160px;
+    }
+    
     img {
       max-width: 100%;
     }
   }
   .photo-column {
-    // col-lg-4 col-sm-12 
     @include media-breakpoint-up(xs) {
       @include make-col($size: 12);
     }
@@ -294,7 +289,6 @@ nav.about-page-nav {
     }
   }
   .text-column {
-    // col-lg-8 col-sm-12 row
     @include media-breakpoint-up(xs) {
       @include make-col($size: 12);
       margin-top: 40px;
@@ -457,4 +451,8 @@ $fade-in-duration: 1s;
 
 .img-box-shadow-light {
   box-shadow: 4px 4px 33px -2px #d9d9d9;
+}
+
+.img-box-shadow-lighter {
+  box-shadow: 4px 4px 33px -2px #e3e3e3;
 }
