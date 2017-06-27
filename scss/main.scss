@@ -106,6 +106,10 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
   &.last {
     margin-right: -0.5rem;
   }
+
+  &.active {
+    border-bottom: 1px solid $nav-gold;
+  }
 }
 
 .navbar-brand > svg {

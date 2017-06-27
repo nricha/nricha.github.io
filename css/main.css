@@ -3873,6 +3873,8 @@ button.close {
   font-size: 0.7rem; }
   .nav-link.last {
     margin-right: -0.5rem; }
+  .nav-link.active {
+    border-bottom: 1px solid #b38e50; }
 
 .navbar-brand > svg {
   width: 50px;
