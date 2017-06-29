@@ -153,13 +153,17 @@ nav.about-page-nav {
   .crop-site-bg {
     width: 100%;
     overflow: hidden;
-    background-image: url(../img/pexels-photo.jpg);
-    background-size: auto 100%;
-    height: 90%;
+    @include media-breakpoint-up(lg) {
+      background-image: url(../img/pexels-photo.jpg);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position-y: 50%;
+    } 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 370px;
+    padding-top: 320px;
+    text-align: center;
     .richa-name {
       color: #636363;
       text-transform: uppercase;

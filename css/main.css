@@ -3906,13 +3906,17 @@ nav.about-page-nav {
 .homepage-row .crop-site-bg {
   width: 100%;
   overflow: hidden;
-  background-image: url(../img/pexels-photo.jpg);
-  background-size: auto 100%;
-  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 370px; }
+  padding-top: 320px;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .homepage-row .crop-site-bg {
+      background-image: url(../img/pexels-photo.jpg);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position-y: 50%; } }
   .homepage-row .crop-site-bg .richa-name {
     color: #636363;
     text-transform: uppercase;

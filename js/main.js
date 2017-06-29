@@ -17,7 +17,4 @@
       setAboutPageHeight();
     }, 250);
   });
-
-  $(window).on('activate.bs.scrollspy', function (evt, activated) {
-  });
 }());
