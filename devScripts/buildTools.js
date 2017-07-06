@@ -39,21 +39,21 @@ const buildMethods = {
   regenProjectWithDirPath: (dirPath) => {
     ejs.renderFile(path.join(dirPath, 'index.ejs'), {}, {}, (err, str) => {
       if(!err) {
+        console.log('regenerated ', dirPath)
         fs.writeFileSync(path.join(dirPath, 'index.html'), str);
+      } else {
+        console.log(err);
       }
     });
   },
   regenAllProjects: () => {
     const allProjects = fs.readdirSync('./projects');
-    const allProjectDirPaths = allProjects.filter((projectName) => {
-      return projectName !== '.DS_Store';
-    }).map((projectName) => {
-      return path.join('./', 'projects', projectName);
-    });
+    const allProjectDirPaths = allProjects
+    .filter((projectName) =>  projectName !== '.DS_Store' && projectName !== 'index.ejs' && projectName !== 'index.html')
+    .map((projectName) =>  path.join('./', 'projects', projectName));
     allProjectDirPaths.forEach(buildMethods.regenProjectWithDirPath);
   },
   regenHomePage: () => {
-    console
     const homePage = path.join('./');
     buildMethods.regenProjectWithDirPath(homePage);
   }
