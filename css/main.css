@@ -3862,6 +3862,8 @@ button.close {
 
 .navbar {
   background-color: white; }
+  .navbar .navbar-brand {
+    display: flex; }
   .navbar .container {
     padding-left: 0;
     padding-right: 0; }
@@ -4190,6 +4192,9 @@ nav.about-page-nav {
 .img-box-shadow-lighter {
   box-shadow: 4px 4px 33px -2px #e3e3e3; }
 
+.collapse .nav-item.home-link {
+  display: none; }
+
 .collapse.show {
   display: flex;
   position: fixed;
@@ -4204,6 +4209,8 @@ nav.about-page-nav {
     align-items: center; }
     .collapse.show .navbar-nav .nav-item {
       margin: 15px 0; }
+      .collapse.show .navbar-nav .nav-item.home-link {
+        display: inline; }
       .collapse.show .navbar-nav .nav-item .nav-link {
         font-size: 1.2rem; }
 
