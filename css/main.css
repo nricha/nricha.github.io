@@ -3863,10 +3863,12 @@ button.close {
 .navbar {
   background-color: white; }
   .navbar .container {
-    margin-left: calc(145px - 1rem);
-    margin-right: calc(145px - 1rem);
     padding-left: 0;
     padding-right: 0; }
+    @media (min-width: 992px) {
+      .navbar .container {
+        margin-left: calc(145px - 1rem);
+        margin-right: calc(145px - 1rem); } }
     @media (min-width: 768px) {
       .navbar .container {
         width: 100%; } }
@@ -4187,3 +4189,32 @@ nav.about-page-nav {
 
 .img-box-shadow-lighter {
   box-shadow: 4px 4px 33px -2px #e3e3e3; }
+
+.collapse.show {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4a4a4a;
+  align-items: center;
+  justify-content: center !important; }
+  .collapse.show .navbar-nav {
+    align-items: center; }
+    .collapse.show .navbar-nav .nav-item {
+      margin: 15px 0; }
+      .collapse.show .navbar-nav .nav-item .nav-link {
+        font-size: 1.2rem; }
+
+.navbar-toggler.navbar-toggler-right[aria-expanded=true] {
+  z-index: 400; }
+  .navbar-toggler.navbar-toggler-right[aria-expanded=true] .navbar-toggler-icon {
+    display: none; }
+  .navbar-toggler.navbar-toggler-right[aria-expanded=true] .close-icon {
+    display: inline; }
+
+.navbar-toggler.navbar-toggler-right .close-icon {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 100; }
