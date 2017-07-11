@@ -91,6 +91,9 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
   top: 138px;
 }
 .navbar {
+  .navbar-brand {
+    display: flex;
+  }
   background-color: white;
   .container {
     @include media-breakpoint-up(lg) {
@@ -477,6 +480,11 @@ $fade-in-duration: 1s;
   margin-bottom: 70px;
 }
 .collapse {
+  .nav-item {
+    &.home-link {
+      display: none;
+    }
+  }
   &.show {
     display: flex;
     position: fixed;
@@ -489,7 +497,11 @@ $fade-in-duration: 1s;
     justify-content: center !important;
     .navbar-nav {
       align-items: center;
+     
       .nav-item {
+        &.home-link {
+          display: inline;
+        }
         margin: 15px 0;
         .nav-link {
           font-size: 1.2rem;
@@ -501,6 +513,7 @@ $fade-in-duration: 1s;
 
 .navbar-toggler {
   &.navbar-toggler-right {
+    
     &[aria-expanded=true] {
       z-index: 400;
       .navbar-toggler-icon {
