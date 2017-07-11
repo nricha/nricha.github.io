@@ -32,6 +32,7 @@ function watchDirectoriesForReload() {
 
 function watchDirectoriesForRegen() {
   bsInstance.watch('./projects/**/!(index.html)').on('change', buildMethods.regenProjectWithFilepath);
+  bsInstance.watch('./index.ejs').on('change', buildMethods.regenHomePage)
   bsInstance.watch('./scss/*.scss').on('change', buildMethods.regenScss);
 }
 
