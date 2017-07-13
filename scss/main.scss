@@ -42,29 +42,25 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
     }
     @include make-col($size: 8);
     
-    @include media-breakpoint-up(md) { 
-      @include make-col-offset(2);
-    }
     margin-bottom: 30px;
     align-self: flex-start;
   }
-  .project-summary {
+  .project-summary, .image-summary {
+    align-self: flex-start;
+    color: fade-out(#000, .5);
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: 13px;
+  
     @include media-breakpoint-up(sm) { 
       @include make-col($size: 10);
     }
     @include media-breakpoint-up(md) { 
        @include make-col($size: 8);
-       @include make-col-offset(2);
      }
     @include media-breakpoint-up(lg) { 
-      @include make-col($size: 3);
+      @include make-col($size: 4.5);
     }
-    align-self: flex-start;
-    margin-bottom: 180px;
-    color: fade-out(#000, .5);
-    letter-spacing: 1px;
-    line-height: 1.8;
-    font-size: 13px;
   }
 
   .project-img-caption {
@@ -469,4 +465,9 @@ $fade-in-duration: 1s;
 
 .img-box-shadow-lighter {
   box-shadow: 4px 4px 33px -2px #e3e3e3;
+}
+
+.golden-divider {
+  border-bottom: 0.25px solid transparentize($nav-gold, 0.5);
+  margin-bottom: 70px;
 }
