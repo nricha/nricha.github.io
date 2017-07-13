@@ -3838,12 +3838,14 @@ button.close {
         flex: 0 0 37.5%;
         max-width: 37.5%; } }
   .project-body .project-img-caption {
-    margin: 30px 0 45px 0;
     text-transform: uppercase;
     align-self: center;
     font-weight: 700;
     font-size: 12.5px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin: 30px 0 45px 0; }
+    .project-body .project-img-caption.with-text {
+      margin: 30px 0 20px 0; }
   .project-body .project-img {
     margin-bottom: 100px; }
     .project-body .project-img img {
