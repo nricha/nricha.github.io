@@ -3859,8 +3859,6 @@ button.close {
 
 .navbar {
   background-color: white; }
-  .navbar .navbar-brand {
-    display: flex; }
   .navbar .container {
     padding-left: 0;
     padding-right: 0; }
@@ -3880,6 +3878,9 @@ button.close {
     margin-right: -0.5rem; }
   .nav-link.active {
     border-bottom: 1px solid #b38e50; }
+
+.navbar-brand {
+  padding-top: 0.8rem; }
 
 .navbar-brand > svg {
   width: 50px;
