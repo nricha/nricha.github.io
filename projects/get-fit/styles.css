@@ -1,0 +1,11 @@
+.leaderboard-and-incentives {
+  display: flex;
+  justify-content: space-around;
+}
+.leaderboard-and-incentives > div {
+  text-align: center;
+}
+.leaderboard-and-incentives > div > img {
+  width: 60%;
+  border: 0.5px solid #eee;
+}
