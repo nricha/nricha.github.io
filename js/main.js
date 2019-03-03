@@ -21,7 +21,7 @@
     const $currentTarget = $(evt.currentTarget);
     const ariaExpanded = ($currentTarget.attr('aria-expanded') === 'true');
     $currentTarget.attr('aria-expanded', !ariaExpanded);
-    const $hamburger = $('#navbarNavAltMarkup');
+    const $hamburger = $('#navbarNav');
     $hamburger.toggleClass('show');
 
     $('.nav-link').on('click', () => {
