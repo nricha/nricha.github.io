@@ -42,7 +42,7 @@
     const $menuToggler = $('button.navbar-toggler');
     const ariaExpanded = ($menuToggler.attr('aria-expanded') === 'true');
     $menuToggler.attr('aria-expanded', !ariaExpanded);
-    const $hamburger = $('#navbarNavAltMarkup');
+    const $hamburger = $('#navbarNav');
     $hamburger.removeClass('show');
   }
 })(window);
