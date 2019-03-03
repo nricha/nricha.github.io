@@ -3,6 +3,8 @@ const ejs = require('ejs');
 const fs = require('fs');
 const sass = require('node-sass');
 
+const projectData = require('./projectData');
+
 const buildMethods = {
   regenProjectWithFilepath: (filePath) => {
     const changedProject = path.dirname(filePath);
@@ -37,7 +39,7 @@ const buildMethods = {
     sassFilePaths.forEach(buildMethods.regenScss);
   },
   regenProjectWithDirPath: (dirPath) => {
-    ejs.renderFile(path.join(dirPath, 'index.ejs'), {}, {}, (err, str) => {
+    ejs.renderFile(path.join(dirPath, 'index.ejs'), {projectData}, {}, (err, str) => {
       if(!err) {
         console.log('regenerated ', dirPath)
         fs.writeFileSync(path.join(dirPath, 'index.html'), str);
