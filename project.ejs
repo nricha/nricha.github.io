@@ -1,0 +1,7 @@
+<a href="./projects/<%= data.name %>/" class="project-click-target project-container row align-items-center justify-content-center">
+  <div>
+    <img src="./projects/<%= data.name %>/img/thumbnail.<%= data.thumbnailFormat ? data.thumbnailFormat : 'jpg' %>" />
+    <div class="project-title secondary-heading"><%= data.title %></div>
+    <div class="project-type"><%= data.type %></div>
+  </div>
+</a>

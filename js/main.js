@@ -1,29 +1,27 @@
-(function() {
-
-  function setAboutPageHeight() {
-    var windowHeight = $(window).height();
+((window) => {
+  const setAboutPageHeight = () => {
+    const windowHeight = $(window).height();
     $('#about').height(windowHeight + 'px');
-  }
+  };
 
-  $().ready(function() {
+  $().ready(() => {
     setAboutPageHeight();
   });
 
-  var resizeTimer;
+  let resizeTimer;
 
-  $(window).resize(function() {
+  $(window).resize(() => {
     clearTimeout(resizeTimer);
-    setTimeout(function() {
+    resizeTimer = setTimeout(() => {
       setAboutPageHeight();
     }, 250);
   });
 
   $('button.navbar-toggler').click((evt) => {
     const $currentTarget = $(evt.currentTarget);
-    let ariaExpanded = $currentTarget.attr('aria-expanded');
-    ariaExpanded = ariaExpanded === 'true';
+    const ariaExpanded = ($currentTarget.attr('aria-expanded') === 'true');
     $currentTarget.attr('aria-expanded', !ariaExpanded);
-    const $hamburger = $('#navbarNavAltMarkup');
+    const $hamburger = $('#navbarNav');
     $hamburger.toggleClass('show');
 
     $('.nav-link').on('click', () => {
@@ -40,12 +38,11 @@
     });
   });
 
-  function closeHamburger() {
+  const closeHamburger = () => {
     const $menuToggler = $('button.navbar-toggler');
-    let ariaExpanded = $menuToggler.attr('aria-expanded');
-    ariaExpanded = ariaExpanded === 'true';
+    const ariaExpanded = ($menuToggler.attr('aria-expanded') === 'true');
     $menuToggler.attr('aria-expanded', !ariaExpanded);
-    const $hamburger = $('#navbarNavAltMarkup');
+    const $hamburger = $('#navbarNav');
     $hamburger.removeClass('show');
   }
-}());
+})(window);
