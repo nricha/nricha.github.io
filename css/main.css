@@ -5901,10 +5901,6 @@ a.close.disabled {
   .navbar .container {
     padding-left: 0;
     padding-right: 0; }
-    @media (min-width: 992px) {
-      .navbar .container {
-        margin-left: calc(145px - 1rem);
-        margin-right: calc(145px - 1rem); } }
     @media (min-width: 768px) {
       .navbar .container {
         width: 100%; } }
