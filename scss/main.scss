@@ -48,9 +48,9 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
   .project-summary, .image-summary {
     align-self: flex-start;
     color: fade-out(#000, .5);
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     line-height: 1.8;
-    font-size: 13px;
+    font-size: 15px;
   
     @include media-breakpoint-up(sm) { 
       @include make-col($size: 10);
@@ -108,14 +108,14 @@ $nav-border-bottom: 1px solid rgba(#23201b, 0.10);
 .nav-link {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   &.last {
     margin-right: -0.5rem;
   }
 
-  &.active {
-    border-bottom: 1px solid $nav-gold;
-  }
+  // &.active {
+  //   border-bottom: 1px solid $nav-gold;
+  // }
 }
 
  .navbar-brand {
@@ -173,7 +173,7 @@ nav.about-page-nav {
     align-items: center;
     text-align: center;
     .name-and-title {
-      margin-top: 9.5rem;
+      margin-top: 7rem;
     }
     .richa-name {
       color: #636363;
@@ -477,8 +477,8 @@ $fade-in-duration: 1s;
 }
 
 .golden-divider {
-  border-bottom: 0.25px solid transparentize($nav-gold, 0.5);
-  margin-bottom: 70px;
+  border-bottom: 0.5px solid transparentize($nav-gold, 0.5);
+  margin-bottom: 50px;
 }
 .collapse {
   .nav-item {
