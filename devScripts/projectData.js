@@ -72,6 +72,11 @@ module.exports = {
   }],
 
   'ui-design': [{
+    name: 'munchkin',
+    title: 'Munchkin - Kids\' Recipe App',
+    type: 'Mobile App',
+  },
+  {
     name: 'get-fit',
     title: 'Get Fit',
     type: 'Mobile & Web App',
