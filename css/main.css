@@ -6126,17 +6126,6 @@ nav.about-page-nav {
         #about .text-column .what-i-do {
           flex: 0 0 100%;
           max-width: 100%; } }
-    #about .text-column .social-networks-row {
-      margin-top: 30px; }
-      @media (min-width: 576px) {
-        #about .text-column .social-networks-row .social-networks-col {
-          flex: 0 0 100%;
-          max-width: 100%; } }
-      #about .text-column .social-networks-row .social-networks-icons {
-        display: flex;
-        justify-content: start; }
-        #about .text-column .social-networks-row .social-networks-icons svg:not(:root) {
-          fill: #d2d2d2; }
     #about .text-column .resume-button {
       border: 1px solid #b38e50;
       color: #b38e50;
@@ -6152,6 +6141,17 @@ nav.about-page-nav {
         background-color: #b38e50;
         color: #fff;
         text-decoration: none; }
+  #about .social-networks-row {
+    margin-top: 30px; }
+    @media (min-width: 576px) {
+      #about .social-networks-row .social-networks-col {
+        flex: 0 0 100%;
+        max-width: 100%; } }
+    #about .social-networks-row .social-networks-icons {
+      display: flex;
+      justify-content: start; }
+      #about .social-networks-row .social-networks-icons object {
+        pointer-events: none; }
 
 .secondary-heading {
   font-weight: 900;

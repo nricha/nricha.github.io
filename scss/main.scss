@@ -98,7 +98,6 @@
   object {
     pointer-events: none;
   }
-
 }
 
 .nav-item:last-of-type {
@@ -346,23 +345,7 @@ nav.about-page-nav {
         @include make-col($size: 12);
       }
     }
-    .social-networks-row {
-      margin-top: 30px;
-      
-      .social-networks-col {
-        @include media-breakpoint-up(sm) { 
-          @include make-col($size: 12);
-        }
-      }
-      .social-networks-icons {
-        display: flex;
-        justify-content: start;
 
-        svg:not(:root) {
-          fill: #d2d2d2;
-        }
-      }
-    }
     .resume-button {
       border: 1px solid $nav-gold;
       color: $nav-gold;
@@ -378,6 +361,22 @@ nav.about-page-nav {
         background-color: $nav-gold;
         color: $white;
         text-decoration: none;
+      }
+    }
+  }
+  .social-networks-row {
+    margin-top: 30px;
+    
+    .social-networks-col {
+      @include media-breakpoint-up(sm) { 
+        @include make-col($size: 12);
+      }
+    }
+    .social-networks-icons {
+      display: flex;
+      justify-content: start;
+      object {
+        pointer-events: none;
       }
     }
   }
