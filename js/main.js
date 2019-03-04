@@ -1,7 +1,7 @@
 ((window) => {
   const setAboutPageHeight = () => {
     const windowHeight = $(window).height();
-    $('#about').height(windowHeight + 'px');
+    $('#about').height(`${windowHeight}px`);
   };
 
   $().ready(() => {
