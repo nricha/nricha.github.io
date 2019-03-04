@@ -6064,7 +6064,9 @@ nav.about-page-nav {
       max-width: 50%;
       margin-top: 160px; } }
   #about .photo-text-container img {
-    max-width: 100%; }
+    max-width: 65%;
+    margin-left: 100px;
+    margin-top: -40px; }
   #about .photo-column {
     flex: 0 0 100%;
     max-width: 100%; }
