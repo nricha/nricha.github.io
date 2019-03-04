@@ -88,6 +88,7 @@
   background-color: white;
   box-shadow: 0px 1px 20px 0px #e4e4e4;
   .container {
+    max-width: 1600px;
     padding-left: 0;
     padding-right: 0;
     @include media-breakpoint-up(md) { 
@@ -98,6 +99,12 @@
     pointer-events: none;
   }
 
+}
+
+.nav-item:last-of-type {
+  @include media-breakpoint-up(lg) { 
+    margin-left: 20px;
+  }
 }
 
 .nav-link {
