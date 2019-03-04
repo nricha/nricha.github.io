@@ -249,7 +249,7 @@ nav.about-page-nav {
       text-transform: uppercase;
       font-weight: $font-weight-regular;
       letter-spacing: 1px;
-      color: fade-out(#000, .5);
+      color: $portfolio-grey;
       font-size: 11px;
     }
   }
@@ -487,4 +487,8 @@ $fade-in-duration: 1s;
 .golden-divider {
   border-bottom: 0.5px solid transparentize($nav-gold, 0.5);
   margin-bottom: 50px;
+}
+
+.dropdown-item {
+  letter-spacing: 0.5px;
 }

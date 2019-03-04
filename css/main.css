@@ -3455,7 +3455,7 @@ html {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3611,9 +3611,9 @@ html {
     text-decoration: none;
     background-color: #f8f9fa; }
   .dropdown-item.active, .dropdown-item:active {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    background-color: #007bff; }
+    background-color: #f8f8f8; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -6442,3 +6442,6 @@ nav.about-page-nav {
 .golden-divider {
   border-bottom: 0.5px solid rgba(179, 142, 80, 0.5);
   margin-bottom: 50px; }
+
+.dropdown-item {
+  letter-spacing: 0.5px; }

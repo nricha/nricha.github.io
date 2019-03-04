@@ -26,7 +26,7 @@ $container-max-widths: (
 
 $porfolio-img-height: 200px;
 $about-page-brown: #23201b;
-
+$portfolio-grey: fade-out(#000, .5);
 $nav-gold: #b38e50;
 $navbar-light-color: $nav-gold;
 $navbar-light-hover-color: darken($navbar-light-color, 1);
@@ -35,3 +35,6 @@ $navbar-light-active-color: rgba($navbar-light-color,.5);
 $navbar-light-disabled-color: rgba($black,.3);
 $navbar-padding-y: 3rem;
 $nav-item-margin: 100px;
+$dropdown-font-size: 0.9rem;
+$dropdown-link-active-bg: #f8f8f8;
+$dropdown-link-active-color: fade-out(#000, .5);
