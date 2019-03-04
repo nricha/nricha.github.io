@@ -467,6 +467,11 @@ $fade-in-duration: 1s;
   }
 }
 
+.push-down-due-to-nav {
+  position: relative;
+  top: 138px;
+}
+
 .img-box-shadow {
   box-shadow: 4px 4px 33px -2px rgb(62, 58, 58);
 }

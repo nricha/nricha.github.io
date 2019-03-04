@@ -6426,6 +6426,10 @@ nav.about-page-nav {
   100% {
     opacity: 1; } }
 
+.push-down-due-to-nav {
+  position: relative;
+  top: 138px; }
+
 .img-box-shadow {
   box-shadow: 4px 4px 33px -2px #3e3a3a; }
 

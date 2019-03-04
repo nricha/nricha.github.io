@@ -2,14 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="./styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
   <title>Editorial Collage</title>
 </head>
 
@@ -28,8 +25,16 @@
       <ul class="nav navbar-nav">
         
         
-        <li class="nav-item">
-          <a id="portfolio-page-link" class="nav-link" href="/#portfolio">Portfolio</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Portfolio
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/#ui-design">UI Design</a>
+            <a class="dropdown-item" href="/#print">Print</a>
+            <a class="dropdown-item" href="/#illustrations">Illustrations</a>
+          </div>
         </li>
         <li class="nav-item">
           <a id="about-page-link" class="nav-link" href="/#about">About</a>
@@ -66,21 +71,24 @@
   </div>
 </section>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-  
-  <script src="../../js/util.js"></script>
-  <script src="../../js/collapse.js"></script>
-  <script src="../../js/main.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<script src="/js/util.js"></script>
+<script src="/js/dropdown.js"></script>
+<script src="/js/scrollspy.js"></script>
+<script src="/js/main.js"></script>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-104887494-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  ga('create', 'UA-104887494-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </body>
 </html>
