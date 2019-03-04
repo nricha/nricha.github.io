@@ -8,6 +8,7 @@
 @import "../node_modules/bootstrap/scss/print";
 
 // Core CSS
+@import "../node_modules/bootstrap/scss/dropdown";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
@@ -80,10 +81,6 @@
   }
 }
 
-.push-down-due-to-nav {
-  position: relative;
-  top: 138px;
-}
 .navbar {
   background-color: white;
   box-shadow: 0px 1px 20px 0px #e4e4e4;
@@ -188,10 +185,17 @@ nav.about-page-nav {
 
 .bottom-half {
   background-color: #fff;
-  padding-top: 200px;
+  padding-top: 70px;
 }
 
-#portfolio {
+.portfolio-section {
+  flex-direction: column;
+  .title {
+    color: $nav-gold;
+    letter-spacing: 3px;
+    padding-top: 200px;
+    text-transform: uppercase;
+  }
   .bottom-half {
     @include media-breakpoint-up(xs) {
       max-width: map-get($container-max-widths, xs);

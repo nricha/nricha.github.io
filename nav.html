@@ -10,16 +10,32 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav">
         <% if(isHomePage) { %>
-        <li class="nav-item">
-          <a id="portfolio-page-link" class="nav-link" href="#portfolio">Portfolio</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Portfolio
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ui-design">UI Design</a>
+            <a class="dropdown-item" href="#print">Print</a>
+            <a class="dropdown-item" href="#illustrations">Illustrations</a>
+          </div>
         </li>
         <li class="nav-item">
           <a id="about-page-link" class="nav-link" href="#about">About</a>
         </li>
         <% } %>
         <% if (!isHomePage) { %>
-        <li class="nav-item">
-          <a id="portfolio-page-link" class="nav-link" href="/#portfolio">Portfolio</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Portfolio
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/#ui-design">UI Design</a>
+            <a class="dropdown-item" href="/#print">Print</a>
+            <a class="dropdown-item" href="/#illustrations">Illustrations</a>
+          </div>
         </li>
         <li class="nav-item">
           <a id="about-page-link" class="nav-link" href="/#about">About</a>

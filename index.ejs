@@ -20,9 +20,26 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="row push-down-due-to-nav align-items-center justify-content-center">
-      <div id="portfolio-bottom-half" class="bottom-half row no-gutters col-12 justify-content-between">
-        <% projectData.forEach(function(data) { %>
+    <section class="portfolio-section row push-down-due-to-nav align-items-center justify-content-center">
+      <h4 id="ui-design" class="title">UI Design</h4>
+      <div class="bottom-half row no-gutters col-12 justify-content-between">
+        <% projectData['ui-design'].forEach(function(data) { %>
+        <%- include('./project.ejs', {data: data}) %>
+        <%});%>
+      </div>
+    </section>
+    <section class="portfolio-section row push-down-due-to-nav align-items-center justify-content-center">
+      <h4 id="print" class="title">Print</h4>
+      <div class="bottom-half row no-gutters col-12 justify-content-between">
+        <% projectData['print'].forEach(function(data) { %>
+        <%- include('./project.ejs', {data: data}) %>
+        <%});%>
+      </div>
+    </section>
+    <section class="portfolio-section row push-down-due-to-nav align-items-center justify-content-center">
+      <h4 id="illustrations" class="title">Illustrations</h4>
+      <div class="bottom-half row no-gutters col-12 justify-content-between">
+        <% projectData['illustrations'].forEach(function(data) { %>
         <%- include('./project.ejs', {data: data}) %>
         <%});%>
       </div>
@@ -77,6 +94,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="./js/util.js"></script>
+  <script src="./js/dropdown.js"></script>
   <script src="./js/scrollspy.js"></script>
   <script src="./js/main.js"></script>
   <script>
