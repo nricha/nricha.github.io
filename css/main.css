@@ -5919,10 +5919,6 @@ a.close.disabled {
   .nav-link.last {
     margin-right: -0.5rem; }
 
-.navbar-brand > svg {
-  width: 50px;
-  height: 27px; }
-
 body {
   position: relative; }
 
