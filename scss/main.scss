@@ -2,7 +2,6 @@
 @import "./variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../node_modules/bootstrap/scss/utilities/flex";
 
 // Reset and dependencies
 @import "../node_modules/bootstrap/scss/print";
@@ -40,6 +39,12 @@
     margin-bottom: 30px;
     align-self: flex-start;
   }
+  .image-summary-no-layout {
+    color: fade-out(#000, .5);
+    letter-spacing: 0.8px;
+    line-height: 1.8;
+    font-size: 15px;
+  }
   .project-summary, .image-summary {
     align-self: flex-start;
     color: fade-out(#000, .5);
@@ -62,19 +67,19 @@
     text-transform: uppercase;
     align-self: center;
     font-weight: $font-weight-bold;
-    font-size: 12.5px;
+    font-size: 13.5px;
     letter-spacing: 2px;
     margin: 30px 0 45px 0;
     &.with-text {
-      margin: 30px 0 20px 0;
+      margin: 30px 0 10px 0;
+    }
+    &.with-text-less-mb {
+      margin: 30px 0 10px 0;
     }
   }
 
   .project-img {
     margin-bottom: 100px;
-    img {
-      max-width: 100%;
-    }
     img.styleguide-border {
       border: 1px solid fade-out(#000, 0.9);
     }
@@ -491,4 +496,7 @@ $fade-in-duration: 1s;
 
 .dropdown-item {
   letter-spacing: 0.5px;
+}
+img {
+  max-width: 100%;
 }

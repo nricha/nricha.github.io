@@ -1,0 +1,26 @@
+.ul-with-green-text {
+  list-style-type: none;
+}
+.ul-with-green-text li {
+  margin-left: -2em;  
+}
+.li-green-text {
+  color: #6AA536;
+  font-style: italic;
+}
+.munchkin-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.munchkin-subtitle {
+  color: #6AA536;
+  margin-bottom: 50px;
+}
+.munchkin-cookies {
+  margin-bottom: 30px;
+}
+.munchkin-process {
+  color: #6AA536;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
