@@ -5748,7 +5748,7 @@ nav.about-page-nav {
   .portfolio-section .title:before {
     content: "";
     display: block;
-    height: 200px; }
+    height: 220px; }
   @media (min-width: 576px) {
     .portfolio-section .bottom-half {
       max-width: 540px; } }
