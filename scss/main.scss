@@ -196,6 +196,14 @@ nav.about-page-nav {
 
 .portfolio-section {
   flex-direction: column;
+  .title {
+    margin: -115px 0 0;
+  }
+  .title:before {
+    content: "";
+    display: block;
+    height: 220px;
+  }
 
   .bottom-half {
     @include media-breakpoint-up(xs) {
@@ -259,6 +267,14 @@ nav.about-page-nav {
 #about {
   line-height: 1.75rem;
   font-size: 15px;
+  .title {
+    margin: -180px 0 0;
+  }
+  .title:before {
+    content: "";
+    display: block;
+    height: 200px;
+  }
   .secondary-heading {
     color: $black;
     font-size: 14px;
@@ -501,10 +517,5 @@ img {
   color: $nav-gold;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: -115px 0 0;
-}
-.title:before {
-  content: "";
-  display: block;
-  height: 220px;
+  
 }

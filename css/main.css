@@ -5740,6 +5740,12 @@ nav.about-page-nav {
 
 .portfolio-section {
   flex-direction: column; }
+  .portfolio-section .title {
+    margin: -115px 0 0; }
+  .portfolio-section .title:before {
+    content: "";
+    display: block;
+    height: 220px; }
   @media (min-width: 576px) {
     .portfolio-section .bottom-half {
       max-width: 540px; } }
@@ -5791,6 +5797,12 @@ nav.about-page-nav {
 #about {
   line-height: 1.75rem;
   font-size: 15px; }
+  #about .title {
+    margin: -180px 0 0; }
+  #about .title:before {
+    content: "";
+    display: block;
+    height: 200px; }
   #about .secondary-heading {
     color: #000;
     font-size: 14px;
@@ -6001,10 +6013,4 @@ img {
 .title {
   color: #b38e50;
   letter-spacing: 3px;
-  text-transform: uppercase;
-  margin: -115px 0 0; }
-
-.title:before {
-  content: "";
-  display: block;
-  height: 220px; }
+  text-transform: uppercase; }
