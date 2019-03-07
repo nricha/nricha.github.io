@@ -5725,7 +5725,8 @@ nav.about-page-nav {
   .homepage-row .crop-site-bg .richa-title {
     color: #b38e50;
     margin-top: 10px;
-    letter-spacing: 2px; }
+    letter-spacing: 3px;
+    font-size: 1.03rem; }
 
 .lead {
   text-transform: uppercase;
