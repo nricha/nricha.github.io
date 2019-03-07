@@ -5740,15 +5740,6 @@ nav.about-page-nav {
 
 .portfolio-section {
   flex-direction: column; }
-  .portfolio-section .title {
-    color: #b38e50;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin: -115px 0 0; }
-  .portfolio-section .title:before {
-    content: "";
-    display: block;
-    height: 220px; }
   @media (min-width: 576px) {
     .portfolio-section .bottom-half {
       max-width: 540px; } }
@@ -6006,3 +5997,14 @@ nav.about-page-nav {
 
 img {
   max-width: 100%; }
+
+.title {
+  color: #b38e50;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: -115px 0 0; }
+
+.title:before {
+  content: "";
+  display: block;
+  height: 220px; }

@@ -196,17 +196,6 @@ nav.about-page-nav {
 
 .portfolio-section {
   flex-direction: column;
-  .title {
-    color: $nav-gold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin: -115px 0 0;
-  }
-  .title:before {
-    content: "";
-    display: block;
-    height: 220px;
-  }
 
   .bottom-half {
     @include media-breakpoint-up(xs) {
@@ -506,4 +495,16 @@ $fade-in-duration: 1s;
 }
 img {
   max-width: 100%;
+}
+
+.title {
+  color: $nav-gold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: -115px 0 0;
+}
+.title:before {
+  content: "";
+  display: block;
+  height: 220px;
 }
