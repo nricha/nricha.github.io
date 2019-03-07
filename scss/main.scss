@@ -199,9 +199,15 @@ nav.about-page-nav {
   .title {
     color: $nav-gold;
     letter-spacing: 3px;
-    padding-top: 200px;
     text-transform: uppercase;
+    margin: -115px 0 0;
   }
+  .title:before {
+    content: "";
+    display: block;
+    height: 200px;
+  }
+
   .bottom-half {
     @include media-breakpoint-up(xs) {
       max-width: map-get($container-max-widths, xs);
@@ -475,7 +481,7 @@ $fade-in-duration: 1s;
 
 .push-down-due-to-nav {
   position: relative;
-  top: 138px;
+  padding-top: 138px;
 }
 
 .img-box-shadow {

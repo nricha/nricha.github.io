@@ -5743,8 +5743,12 @@ nav.about-page-nav {
   .portfolio-section .title {
     color: #b38e50;
     letter-spacing: 3px;
-    padding-top: 200px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: -115px 0 0; }
+  .portfolio-section .title:before {
+    content: "";
+    display: block;
+    height: 200px; }
   @media (min-width: 576px) {
     .portfolio-section .bottom-half {
       max-width: 540px; } }
@@ -5982,7 +5986,7 @@ nav.about-page-nav {
 
 .push-down-due-to-nav {
   position: relative;
-  top: 138px; }
+  padding-top: 138px; }
 
 .img-box-shadow {
   box-shadow: 4px 4px 33px -2px #3e3a3a; }
