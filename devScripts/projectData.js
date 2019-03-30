@@ -83,13 +83,25 @@ module.exports = {
     title: 'Skateboard Graphics',
     type: 'Digital Illustration',
     thumbnailAltText: 'Thumbnail - Mockup of illustrations on skateboards',
+  },
+  {
+    name: 'fake',
+    title: '',
+    type: '',
+    thumbnailAltText: '',
   }],
 
   'ui-design': [{
+    name: 'pennytree',
+    title: 'Pennytree Personal Finance',
+    type: 'Mobile App',
+    thumbnailAltText: 'Thumbnail - Mockup of the Pennytree app on a phone',
+  }, 
+  {
     name: 'munchkin',
     title: 'Munchkin - Kids\' Recipe App',
     type: 'Mobile App',
-    thumbnailAltText: 'Thumbnail - Mockups of the Munckin app on phones',
+    thumbnailAltText: 'Thumbnail - Mockups of the Munchkin app on phones',
   },
   {
     name: 'get-fit',
@@ -127,5 +139,11 @@ module.exports = {
     title: 'Horoscope',
     type: 'Tablet App Design',
     thumbnailAltText: 'Thumbnail - Mockup of Horoscope app on an iPad.',
+  },
+  {
+    name: 'fake',
+    title: '',
+    type: '',
+    thumbnailAltText: '',
   }]
 };
