@@ -1,7 +1,7 @@
 const path = require('path');
 const ejs = require('ejs');
 const fs = require('fs');
-const sass = require('node-sass');
+const sass = require('sass');
 
 const projectData = require('./projectData');
 
@@ -15,21 +15,10 @@ const buildMethods = {
   regenScss: (filePath) => {
     const outDir = path.join('./', 'css');
     console.log(filePath , ' changed')
-    sass.render({
-      file: filePath,
-      includePaths: [
-        'node_modules/bootstrap/scss'
-      ],
-      outFile: outDir
-    }, (err, result) => {
-      if(!err) {
-        const outFile = path.basename(filePath).replace('scss', 'css');
-        const outPath = path.join(outDir, outFile);
-        fs.writeFileSync(outPath, result.css.toString());
-      } else {
-        console.log(err);
-      }
-    });
+    const compiledCss = sass.compile( filePath);
+    const outFile = path.basename(filePath).replace('scss', 'css');
+    const outPath = path.join(outDir, outFile);
+    fs.writeFileSync(outPath, result.css.toString());
   },
   regenAllScss: () => {
     const sassFiles = fs.readdirSync('./scss/');

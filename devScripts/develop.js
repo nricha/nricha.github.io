@@ -1,7 +1,7 @@
 const browserSync = require('browser-sync');
 const bsInstance = browserSync.create();
 
-const sass = require('node-sass');
+const sass = require('sass');
 const fs = require('fs')
 const path = require('path')
 
